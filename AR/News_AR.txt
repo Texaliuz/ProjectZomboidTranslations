@@ -1,84 +1,1498 @@
-[VERSION] 38.19
-[NEWS]
-[BOLD]¡Nueva zona añadida! La ciudad de Riverside, el cercano Knox Heights Country Club, Spa y Campo de Golf, y muchas y variadas áreas silvestres están preparadas para la exploración.
-[DOT2]Se encuentra al oeste de West Point y tiene un tamaño similar.
-[DOT2]Contiene nuevos tipos de edificios, arquitectura y baldosas.
-[DOT2]Incluye el mapa de Riverside.
-[BOLD]Actualización de la vista del mundo.
-[DOT2]Las casas, los negocios, las vallas publicitarias y los exteriores se ven ahora en todo su esplendor, incluidos los techos. Los niveles de construcción por encima del jugador se ocultan SOLAMENTE para el "edificio actual".
-[DOT2]Las ventanas ahora se deben revisar acercándose a ellas y mirando a través de las mismas.
-[DOT2]Los niveles superiores que bloqueaban tu vista se eliminan al acercarte o cuando hay zombies cercanos.
-[DOT2]Las paredes exteriores ya no son transparentes cuando estás fuera a menos que estén bloqueando la vista de tu personaje.
-[BOLD]Mejoras en Multijugador y Cooperativo.
-[DOT2]Los datos de ubicación y movimiento de zombies compartidos entre los jugadores están mejor optimizados para tratar los casos de lag, teletransportación, mordiscos injustificados y tensión general del servidor.
-[DOT2]Opción de pausa 'Server Save' para servidores más grandes que detiene la acción al guardar, reduciendo las ocasiones de lag repentino en los zombies.
-[DOT2]Añadido un botón "Subir de nivel" en la interfaz de estadísticas del jugador para subir rápidamente el nivel de una habilidad sin usar el punto global.
-[DOT2]Añadida una interfaz para administradores para gestionar el inventario del jugador.
-Añadida una forma fácil para que los modders añadan columnas a sus listas de desplazamiento.
-Añadida opciones de "zona muerta" a la configuración del mando para aliviar los problemas que sufren los jugadores al dormir.
-[BOLD]Gestión de cadáveres.
-[DOT2]Ahora puedes cavar tumbas con una pala y enterrar múltiples cadáveres en su interior.
-[DOT2]Nuevas elaboraciones en carpintería: una cruz de madera, un hito y un piquete conmemorativo para colocar junto a las tumbas que caves.
-[DOT2]Grandes montones de cadáveres podridos harán sentirte enfermo y triste si permaneces cerca de ellos por largos períodos de tiempo.
-[BOLD]Añadidas nuevas opciones de mundo personalizado:
-[DOT2]Aparición de generadores: aumenta/disminuye la probabilidad de que los generadores eléctricos aparezcan en el mapa.
-[DOT2]Consumo de nafta del generador: afecta a la cantidad de nafta que consumen los generadores. Un generador que no necesita combustible debe ser puesto a 0.0. (Sustituye a la opción de servidor GeneratorFuelConsumption).
-[DOT2]Posibilidad aleatorizada de casa: aumenta/disminuye la probabilidad de descubrir casas seguras aleatorias en el mapa: quemadas, que contienen escondites de botín, cadáveres de supervivientes muertos, etc.
-[DOT2]Mapa anotado: ajusta la frecuencia con que un mapa saqueado tendrá anotaciones marcadas en él por un superviviente muerto.
-[DOT2]Daño en construcción por zombies: determina si los zombies pueden o no destruir las construcciones y defensas de los jugadores.
-[DOT2]Puntos de rasgos gratis: añade puntos gratis durante la creación de personajes.
-[DOT2]Resistencia de construcción por el jugador: proporciona a las construcciones del jugador puntos de impacto adicionales para que sean más resistentes a los daños de los zombies.
-[DOT2]Zombies activos día/noche: determina si los zombis son más activos durante el día, o si actúan más de noche. Los zombis inactivos serán más lentos y tienden a no perseguir.
-[DOT2]Oscuridad nocturna: ajusta la oscuridad durante las noches.
-[DOT2]Gravedad de la lesión: aumenta y disminuye el impacto que las lesiones tienen en tu cuerpo y su tiempo de curación.
-[DOT2]Fractura de hueso: habilita o deshabilita las extremidades rotas cuando los supervivientes sufren lesiones por impactos, daños de zombies y caídas.
-[DOT2]Tiempo antes de la eliminación de cadáveres: número de horas en el juego antes de que los cadáveres de zombies sean eliminados automáticamente del mapa. (Sustituye a la opción anterior del servidor HoursForCorpseRemoval).
-[DOT2]Impacto en la salud por los cadáveres en descomposición: determina el impacto que tienen los cadáveres cercanos en la salud y las emociones del jugador.
-[DOT2]Degradación de la ropa: determina la rapidez con la que la ropa se degrada, se ensucia y se llena de sangre.
-[DOT2]Aleatorización de la velocidad, fuerza, dureza y cognición de los zombies.
-[DOT2]Propagación del fuego (anteriormente "NoFire" en las opciones del servidor): ajusta si el fuego se puede propagar o no.
-[BOLD]Degradación de la ropa.
-[DOT2]La ropa puede ensuciarse durante períodos prolongados, dependiendo de tus actividades.
-[DOT2]Pelear contra zombies hará ensangrentar tu ropa.
-[DOT2]Si estás usando ropa sucia o ensangrentada sobre una herida abierta entonces las probabilidades de infección (infección normal, no zombie) aumentarán.
-[DOT2]La ropa ahora también tiene durabilidad, cada vez que te golpeen perderás un poco.
-[DOT2]Algunas prendas son más resistentes que otras.
-[BOLD]Optimización en preparación para la llegada de vehículos.
-[DOT2]Colección de basura optimizada.
-[DOT2]LightingJNI optimizado.
-[DOT2]Corregido aumento en el uso de memoria de 2-300 MB que podía detener el juego.
-[DOT2]Carga de mapa optimizada.
-[BOLD]Cambio en la carga de mapa personalizado.
-[DOT2]Nueva pantalla "Seleccionar lugar de aparición" después de la selección del mod de mapa.
-[DOT2]Todos los mods de mapa se cargan ahora, incluyendo los puntos de aparición.
-[DOT2]Ya no es necesario crear un mod 'multi-mapa'. Opción 'Priorizar mod de mapas' añadida para resaltar qué mapas tienen prioridad si hay solapamientos geográficos y conflictos, con advertencias también para el jugador.
-[BALANCE]
-Se incrementaron ligeramente los valores nutritivos del pescado y las bayas.
-Incremento de los puntos de impacto en las construcciones del jugador.
-Eliminada la opción "Año de inicio" en el modo mundo personalizado.
-Los programas de TV y Radio ahora tienen un impacto en el personaje. Si estás viendo un programa instructivo entonces se recibe un multiplicador XP.
-Dormir en el exterior bajo la lluvia despertará a los jugadores, a menos que estén en una tienda de campaña o bajo una estructura con techo.
-Los botiquines de primeros auxilios ahora aparecen con vendas esterilizadas, en lugar de vendas regulares.
-Ahora puedes esterilizar las vendas en un recipiente con agua hirviendo.
-Los colchones se pueden fabricar ahora con una aguja de sutura y una aguja normal.
-Ahora se pueden añadir especias como primer ingrediente en pasta y arroz (ejemplo marinara).
-[BUG FIX]
-Corregido error de vertido de agua.
-Corregida la opción "ninguno" de memoria zombi que no funcionaba en mundo personalizado.
-Arreglado un bug con las fases de la luna que no afectaban a la luz ambiental por las noches.
-Arregladas las farolas de las calles que seguían funcionando cuando no había electricidad.
-Arreglado el poder acceder a los refugios rivales de los jugadores mediante trucos de carpintería.
-Arreglado el poder pasar por las ventanas de la casa segura de un jugador.
-Arreglados múltiples aspectos de la interfaz de usuario que no funcionan con un mando (rebuscar, mapas anotados, opciones de mundo personalizado, etc.).
-Grandes cantidades de pequeños objetos ahora rellenan correctamente el espacio disponible en los contenedores.
-Corregido la interrupción al leer libros mientras el personaje apunta con un arma.
-Corregido los personajes que perdían fracciones de EXP al guardar.
-Agregados los puntos de aparición que faltaban en la interfaz de configuración de servidor.
-Agregado relleno de mundo que faltaba.
-Corregido un posible error con el reinicio de la alarma.
-Se ha solucionado que siempre lloviese al cargar/empezar una partida.
-Se solucionó un error raro con la interfaz de elaboración.
-Corregido un error con el cálculo getLightFoodMod().
-Se arreglaron las recetas evolucionadas de bebidas que no se podían tomar cuando un ingrediente podía ser añadido (error del café).
-Habilitado el administrador de voz en SP. (Debe dar una ligera mejoría en FPS, especialmente en sistemas más lentos).
-Corregido problema de elaboración con la bebida caliente.
+[VERSION] 41 - Lanzamiento Inicial Beta
+[SECTION]
+[NODOT] <CENTRE><SIZE:large> La Build 41 es la actualización más fundamental y amplia que Project Zomboid haya tenido nunca. <BR><LINE> Nuestra intención es que sea una base estable sobre la cual construir durante muchos años por venir. Por esta razón, anticipamos una beta pública bastante larga mientras todos los problemas presentados por los probadores de la comunidad sean destacados y solucionados. <LINE> Algunas características clave, principalmente MP, están deshabilitadas en la versión beta. <LINE>
+<LEFT> Nuevos estilos de juego: Constructor, Luchador y Superviviente.
+Jugabilidad más letal de 'Superviviente' (Supervivencia) - el jugador puede ser arrastrado por la horda y devorado, etc.
+Nuevas habilidades de supervivencia: sentarse, acechar, correr, trotar, recargar, subir, saltar vallas, derrumbarse y mucho más.
+Nuevo combate, nuevas armas, nuevo equilibrio de dificultad.
+Nueva creación de personajes: muchas opciones de ropa nuevas tanto al comenzar como descubribles en el mundo como botín o en los zombis.
+Nuevo comportamiento de los zombis: festín con cadáveres recientes, recostarse contra las paredes, caer sobre cercas, etc.
+Sistema de sangre que ensucia progresivamente los cuerpos y la ropa de los supervivientes y los zombis.
+Nuevo sistema de lesiones: movimiento y combate visiblemente obstaculizados cuando se está herido. Ahora son posibles las laceraciones, un estado de lesión que se encuentra entre mordeduras y arañazos.
+Mejoras en el manejo de armas: contorno de puntería verde/rojo, armas nuevas, mejora en recargar y recargar, aumento de la aparición de botín de armas.
+Escenas de muerte de zombis: zombis descubiertos en situaciones en las que murieron personas. Reuniones de oración, fiestas de visualización de deportes, zombis supervivientes con mochilas, etc.
+Tipo de zombi/ropa e inventarios situacionales - zombis policías en la comisaría, zombis bomberos en edificios quemados, zombis cocineros en cocinas de restaurantes, zombis novios y novias en una ceremonia de bodas en la iglesia, etc.
+Protección de ropa: diferentes prendas de vestir proporcionan diferentes niveles de protección contra los ataques de zombis.
+Ropa visiblemente rasgada y dañada.
+Nuevo sistema de visión estilo Sims.
+Mejoras en el manejo de vehículos, redimensionamiento y ajustes de apariencia.
+Banda sonora de temática de Kentucky actualizada, remasterizada y mejorada. La música original sigue en rotación y también es accesible a través de las opciones del juego.
+Nuevos efectos de sonido: armas de fuego, gemidos de zombis, etc.
+Nuevos visuales de agua, incluida la dirección del flujo visible.
+Nuevo sistema de charcos durante lluvias intensas.
+Vidrios rotos y lesiones relacionadas.
+Las puertas de garaje pueden abrirse/cerrarse y temblar al ser golpeadas.
+Nuevos mapas de desafío: Estudio de cine e Isla de Vacaciones Kingsmouth.
+Maniquíes de tienda en 3D: puedes vestirlos como quieras.
+Lavadoras y secadoras funcionales.
+Nuevo cursor de juego.
+Nuevo sonido de nivel ascendente y sistema de nivelación ajustado.
+Débil cursor de puntería isométrica que muestra dónde estás apuntando en el espacio iso.
+Nuevo equilibrio de botín y sistema de equilibrio de botín: las casas y tiendas ahora tienen botín en los contenedores que esperarías en la vida real, y no en un desorden.
+Dos niveles de prioridad de botín, lo que permite un botín de 'relleno' más realista entre los objetos de juego más valiosos.
+Muchas, muchas correcciones generales incluyendo soluciones para: autos flotantes, problemas de agricultura, alarmas de casa inaudibles, arbustos de erosión bloqueando vehículos, supervivientes desensibilizados siendo atacados por arrastradores y mucho más.
+¡MOCHILAS VISIBLES!
+
+[VERSION] 41.13
+[SECTION]
+Reconstruida jassimp64.dll con biblioteca c++ vinculada estáticamente (elimina la dependencia de msvcp140.dll).
+Corregida excepción en MouseState con ratón de 2 botones.
+Corregido error de lua con el comando de menú contextual de pasar por la ventana.
+Objetos solidtrans junto a marcos de ventanas sin ventanas ahora son sólidos.
+Eliminadas las opciones de modelos 3D y cadáveres 3D para corregir cuerpos de zombis invisibles.
+Eliminado AutoZombieManager.java que ajustaba el número de modelos 3D según el rendimiento.
+Corregida excepción con la opción "Nuevo ocultamiento de techo" = No que provoca pantalla negra afuera.
+Corregido "bienvenido a la build 41" descentrado.
+Posiblemente corregidos cuerpos con colores arcoíris en Mac OS.
+Posiblemente corregida la falla al cargar la animación de bob/bob_idle en Windows usando locales turcos (y potencialmente otros).
+
+[VERSION] 41.14
+[SECTION]
+Varios arreglos de movimiento/rotación, esperemos una solución final para el problema del idioma turco, varios otros arreglos de errores y modos Trampero y Constructor funcionando
+[SECTION] ANIMACIONES
+Ahora trata el apuntar/esquivar como un estado de impulso cero, como el reposo.
+Turn180 ahora utiliza idleToRun180 en lugar de runToTurn180 al pasar de esquivar -> correr en la dirección opuesta al movimiento.
+Solo mezcla (con animaciones) con defaultWalk/Run/Sprint si isTurningAround==falso
+Utiliza transiciones sin animaciones de lo contrario. Esto evita que las animaciones de transición se dupliquen con las animaciones de turn180.
+ZNetFriends continúa haciendo ping en un jugador, posible fuente de caída de FPS
+Correr -> Esquivar -> Correr ahora sigue una línea recta de movimiento. Ya no realiza el extraño movimiento en arco durante la transición
+Las transiciones de Esquivar -> Correr ahora solo usan animaciones de transición si no se gira más de 90 grados.
+Las transiciones de Esquivar -> movimiento se actualizan a los objetivos correctos cuando isTurning90/Around.
+
+[SECTION] BALANCE
+Aumentar calidad de los neumáticos en los autos a al menos 20-30% en el modo Supervivencia
+
+[SECTION] ARREGLOS
+Corregido vehículo que se detiene inmediatamente después de que se revienta su neumático
+Se debería ocultar el spam de "Failed to Poll Device", puede ser fuente de caída de FPS para aquellos con Bluetooth u otro hardware inalámbrico
+Corregido bob/bob_idle faltante en sistemas turcos.
+Corregido error de búsqueda de AnimationSet con configuración regional turca ("Idle" -> "idle").
+Corregido EmptyStackException en IsoSpriteInstance.get().
+Corregido jugador que no comienza sin ropa en AReallyCDDAy.
+Iconos personalizados para ropa y contenedores se pierden después de recargar un juego.
+Excepción corregida al limpiar sangre con una toalla de baño.
+Excepción corregida al cargar escopetas (o cualquier arma sin un cargador).
+GrabItemAction transfiere múltiples elementos a la vez similar a InventoryTransferAction.
+Se corrigió la transferencia de grandes pilas de elementos que afectaban los FPS.
+Corregido perder munición al crear una escopeta recortada.
+Comportamiento de redimensionamiento de la pantalla de Personalización de Personajes corregido.
+Se corrigió la combinación de InventoryTransferActions cuando los contenedores de origen y destino no son los mismos.
+Cambiado "versión 110" a "versión 120" en algunos shaders que usan funciones en expresiones constantes.
+Correcciones para el manejo de fallos de MainThread/GameThread.
+[NODOT]<INDENT:40> Un fallo en RenderThread ya no bloquea el juego.
+[NODOT]<INDENT:40> - Los errores no capturados ahora se absorben, se registran y se intenta preservar los datos guardados.
+[NODOT]<INDENT:40> Se agregaron manejadores de excepciones no capturadas a MainThread, GameThread y cualquier otro hilo interno que pude encontrar.
+[NODOT]<INDENT:40> Se agregó manejador no capturado predeterminado para cualquier hilo externo.
+[NODOT]<INDENT:40> Se agregó manejador personalizado para MainThread, establece bGameThreadExited y señala RenderThread.
+[NODOT]<INDENT:40> Se agregó manejador personalizado para RenderThread, establece m_isCloseRequested, anula cualquier cola de espera y espera a que MainThread guarde y cierre.
+[NODOT]<INDENT:40> - DebugOptions
+[NODOT]<INDENT:40> Se agregó mecanismo testThreadCrash, utilizado para generar un fallo bajo demanda, de forma remota desde AnimZed.
+Correcciones para extraños giros en arco durante la transición de caminar -> esquivar
+Arregladas las opciones de estilos de juego Trampero y Constructor en el menú para evitar que se inicie Superviviente por error
+Corrección de fallo cuando getVectorFromDirection recibe un vector nulo.
+
+[VERSION] 41.15
+[SECTION]NUEVO
+Renombrados los estilos de juego para mayor claridad y enfatizar la intención de desarrollo sobre cómo deberían jugarse. Trampero se convierte en Superviviente, Superviviente se convierte en Apocalipsis.
+Agregadas transiciones sin animación para caminar sigilosamente -> esquivar, correr sigilosamente -> esquivar, caminar sigilosamente bajo -> esquivar y correr sigilosamente bajo -> esquivar.
+[NODOT]<INDENT:40> - Elimina el extraño arco de giro al hacer la transición a esquivar.
+Eliminada la animación strafeToWalk de esquivar sigilosamente -> caminar/correr/etc.
+[NODOT]<INDENT:40> - Reduce la cantidad que salta el personaje al hacer la transición de esquivar sigilosamente a dichos estados.
+Implementados efectos de sonido para colisiones de autos de menor impacto.
+Agregado estado de caída de zombi.
+Agregada información sobre herramientas de contexto para abrir/cerrar cortinas para mostrar accesos directos de teclado y ratón.
+Agregado VERSION=1 a keys.ini. Remapea C a L cuando VERSION no está presente o es menor que 1.
+Agregada transición de estado de estiramiento a caída para zombis.
+Agregada transición de escalada sobre valla a caída (cuando no hay suelo al otro lado).
+Agregada textura de mapa de altura para charcos. Esta textura debería mejorar el rendimiento al dibujar charcos.
+Agregados Logs/ZombieSpawn.txt para registrar apariciones de zombis. Debería registrar zombis apareciendo dentro de edificios, no tanto afuera.
+
+[SECTION]BALANCE
+Atenuado un poco zombis y apariciones de zombis en Superviviente (antes Trampero).
+Reducido el retraso después de pasar por una ventana o sobre una valla antes de que el jugador pueda moverse.
+Temporariamente deshabilitado el cambio de temperatura corporal para ayudar a la gente a sobrevivir el invierno.
+Ajustada la detección de impacto en partes del cuerpo de zombis derribados para ser un poco más generosa.
+Ahora, manos desnudas en múltiples golpes pueden empujar hasta 3 zombis - en modo Superviviente (antes Trampero).
+Configurado ConditionMax=100 para generadores.
+Configurado ConditionMax=100 para algunas partes de vehículos.
+
+[SECTION]CAMBIOS DE ANIMACIÓN Y MODELO
+Ajustadas varias animaciones de giro.
+Reverso del logo de la camioneta mccoy.
+
+[SECTION]CORRECCIONES
+Corregido empujar al primer zombi dentro del alcance, en lugar del zombi más cercano dentro del alcance.
+Corregida ruta incorrecta a Ambient Piano.
+Intento de corrección para problemas en Mac mediante la reconstrucción de la librería 'lighting' de Mac 'lighting' libLighting.dylib.
+Corregida zombificación por arañazos de árbol.
+Corregidos trabajos de RenderThread a veces informados como finalizados antes de ser invocados.
+Corregido botón "Aleatorio" en la pantalla de Personalización de Personajes que restablecía la profesión del jugador.
+Corregido Molotovs y armas rotas que no se eliminaban de las manos del jugador.
+Corregidos iconos de elementos en el suelo siendo el doble del tamaño normal cuando "Texturas de tamaño doble" = No.
+Corregidos problemas al guardar el jugador en la base de datos vehicles.db.
+Los nombres de archivo Unicode no son compatibles con el importador de animaciones/modelos.
+No se puede abrir/cerrar ventanas a través del menú contextual cuando el jugador ya está parado exactamente en el centro del cuadrado.
+Zombis dejaron de arrastrar a un jugador en modo dios hasta su muerte.
+Bajadas las posiciones de pasajeros exteriores del SportsCar (corrige un glitch de la cámara).
+Rasgar Ropa y Hacer Soga funcionan en todos los elementos seleccionados (si son válidos).
+Eliminados PerformanceSettings.modelsEnabled y PerformanceSettings.support3D.
+Disminuido el número de hilos de carga de activos de 4 a 2 en sistemas con 4 o menos hilos de hardware. es decir, doble núcleo con hiperprocesamiento, o cuádruple núcleo sin hiperprocesamiento.
+Corregidos iconos de rasgos faltantes al usar la configuración regional turca. (Propenso a enfermedades, Analfabeto, etc). Todo con una I mayúscula.
+Doble clic en etiquetas de tutorial y estilos de juego en la pantalla de nuevo juego avanza a la siguiente pantalla.
+Corregidos problemas al atacar mientras se está en un vehículo (munición infinita, no se puede empujar).
+Intento de corregir excepciones en ClimbThroughWindowState. No almacenar IsoWindow o IsoGridSquare en StateMachineParams ya que pueden volverse inválidos debido al desplazamiento del mapa (para zombis en el borde del área cargada, no el jugador).
+Corregido error de lua en DebugChunkStateUI.
+Corregido mostrar LMENU como LALT. Mostrar RMENU como RALT.
+Al borrar un atajo de tecla se muestra sin nombre en lugar de NONE.
+Algunos problemas extraños cancelando la aceleración cuando estás cerca de zombis.
+Elementos flotando en el aire al ser soltados desde dentro de un vehículo.
+Generadores multiplicados después de usar "Equipar en ambas manos".
+El inventario del jugador se vincula a un zombi después de que un cuchillo queda atascado en la cabeza del zombi.
+Manos Desnudas no se contaban como un arma favorita, excepto al pisotear.
+Opción "Desatar Pelo" disponible para cabello ya desatado después de cargar un juego.
+El jugador no muere correctamente después de caer.
+
+[VERSION] 41.16
+[SECTION]
+- Aumentada la asignación de memoria para zomboid de 64 bits que podría evitar posibles bloqueos en algunos sistemas al cargar el juego.
+Corregidos problemas de shader con superposiciones y agujeros de ropa que afectan algunas GPUs (gran fuente de bloqueos/fallos al cargar el juego/salir de la casa inicial y probablemente la misma causa de algunos problemas de Mac reportados).
+Agregadas opciones de transparencia / visibilidad del cursor iso para combate.
+- El hilo de renderizado ahora mostrará mensajes de error más claros para diagnosticar problemas futuros.
+Corregido zombis reproduciendo su sonido de muerte a veces cuando son apuñalados (pero no con apuñalamiento en la mandíbula).
+[NODOT]<INDENT:40> Esto sucedía cuando bCloseKill=true pero CriticalHit=false.
+Un zombi muere tan pronto como es apuñalado en la mandíbula, no después de caer al suelo.
+[NODOT]<INDENT:40> La animación de KnifeDeath se reproduce en el estado de caída, no en el estado de reacción al golpe.
+[NODOT]<INDENT:40> La reacción al golpe de KnifeDeath no ocurre ahora porque el zombi está muerto antes de caer.
+Corregido problema de número de zombis en Supervivencia
+Corregido fallo de búsqueda de ruta al moverse en el mismo cuadrado cuando ese cuadrado está bloqueado en todas las direcciones.
+[NODOT]<INDENT:40> Esto funcionaba antes de que luautils.walkAdj() fuera cambiado para no llamar a AdjacentFreeTileFinder.isTileOrAdjacent().
+
+[VERSION] 41.17
+[SECTION]NUEVO
+Todos los personajes ahora empiezan con un cinturón - dándoles un slot "Espalda" y dos slots de cinturón (izquierda/derecha) de cinturón.
+Puedes hacer clic derecho en un slot, o arrastrar y soltar un arma a él. O, alternativamente, hacer clic en un arma en tu inventario para adjuntarla a la barra de acceso rápido.
+Las armas se mostrarán en el jugador. Presionar una tecla de acceso rápido (del 1 al 5) equipará automáticamente el arma asignada a cada slot.
+Agregados portaherramientas. Los portaherramientas tienen una oportunidad de aparecer en zombis policías/estadopolicías.
+Reconstruido ProjectZomboid.exe como una aplicación de interfaz gráfica, sin más ventana de consola. Debería funcionar con Steam Remote Play Together ahora.
+Agregada animación Bob_VaultOverToFall del jugador al trepar sobre vallas.
+Agregada animación Zombie_WalkTrees de zombi para caminartoward y estados de búsqueda de ruta.
+Animaciones de lanzamiento de zombis reproducidas al 50% de velocidad en árboles.
+
+[SECTION]BALANCE
+Potenciado daño de hacha de madera, velocidad, cantidad de tiempo que puedes moverte durante el esquive, para hacerla un arma viable (pero aún bastante lenta) de daño pesado
+Forzar estar de pie al beber/llenar elementos desde el lavabo.
+Reducido tamaño del modelo de pistola (+ boca de fuego rediseñada)
+Agregada piedra astillada para receta de lanza.
+Hizo las vallas altas transparentes cuando el jugador está detrás de ellas
+Deshabilitado el rasgo Hipocondríaco hasta que pueda ser completamente rehecho
+XP de recarga ahora otorgado al insertar balas en el cargador (pequeña probabilidad) y al recargar (mayor probabilidad).
+Agregada pesca con lanza.
+Ahora equipar en 2 manos pala al tomar tierra/arena..
+Agregada sartén para salteado.
+
+[SECTION]CORRECCIONES
+
+Corregido zombis apareciendo en edificios mucho después de que un jugador haya entrado al edificio.
+Corregidos problemas de escopeta de doble cañón.
+[NODOT]<INDENT:40> 1) Icono de inventario faltante.
+[NODOT]<INDENT:40> 2) Cámara eliminada, lo que permitía cargar 3 cartuchos.
+[NODOT]<INDENT:40> 3) No se requiere cargar.
+Corregidos problemas de zombis en forma de mancha/maleta al aparecer
+Corregido fallo de FMOD en 64 bits.
+Corregidos zombis quedándose atascados en el aire después de trepar por una ventana.
+Corregida excepción después de renombrar alimentos para tener un carácter de signo de dólar en él.
+Corregido error de lua al tomar compost de un compostador.
+Corregido jugadores zombificados interactuando con puertas/ventanas/etc al hacer clic izquierdo.
+Corregidas nuevas palas no siendo utilizables para tomar tierra/grava/arena.
+Corregida animación de martillado al verter tierra/grava/arena de una bolsa.
+Corregidos console.txt de Logs.zip se limitan a solo 2 líneas durante la mayoría de los fallos
+Corregidos problemas al presionar Escape al entrar o salir de un vehículo, o cambiar de asientos.
+Corregido jugadores atravesando una pared al correr saltando sobre una valla adyacente a la pared.
+Corregido problema: Excepción de hilo no manejada por SQLDB en un entorno no UTF8.
+Corregida pantalla de protección que no funciona con un controlador.
+Corregidos botones de información de cabello/barba que no funcionan con un controlador.
+Corregidos secadora y lavadora de ropa que continúan reproduciendo sonido después de que se apaga la electricidad.
+Corregido máscara climática que no se actualiza cuando cambia el nivel de zoom.
+Corregida máscara climática que no se renderiza para jugadores de pantalla dividida.
+Corregidos zombis que quedan atascados después de trepar sobre una valla sin suelo al otro lado.
+Corregidos algunos archivos que se cierran mediante la recolección de basura.
+La tecla de agacharse solo afecta al jugador 0 lo que corrige el agacharse compartido en pantalla dividida
+Opción "Sentarse en el Suelo" disponible cuando ya estás sentado.
+Opción "Sentarse en el Suelo" no disponible al usar un controlador.
+Corregida adición de alimentos congelados en recetas.
+Corregidos calcetines viejos que siguen existiendo.
+
+[VERSION] 41.18
+[SECTION]NUEVO
+Agregado sonido "Terminado" a Lavadora/Secadora
+No poder añadir/quitar ropa a la lavadora/secadora mientras el ciclo está activo
+Cambio en Moodle "Heridas menores, primeros auxilios requeridos"
+Los ajustes personalizados de Sandbox no se guardan como un Preset Guardado si "/" está en el nombre
+Efectos de sonido de pesca no sincronizados
+Error en conjunto de ropa
+Error al llenar una cacerola rota
+Corregido índice de uniforme no inicializado con TallFenceShader.
+Desactivado TerrainRenderTiles_UseShaders en modo no-debug, configurado predeterminado=falso.
+Corregidos shaders de suelo y pared que se recreaban cada vez que se iniciaba un juego.
+Esperemos que se solucionen los problemas de rendimiento de charcos de lluvia.
+Reactivados los sonidos ambientales de refrigerador/ventana/puerta/etc.
+Cambiado el sonido de goteo de agua para que solo se reproduzca en sprites de IsoFlagType.waterPiped con agua (así no gotean después de que se apaga el agua, a menos que estén conectados a una fuente de agua).
+Guardar posición de barra de acceso rápido para evitar rarezas al cargar el juego con portaherramientas equipado.
+Ajustadas algunas posiciones de modelos para armas adjuntas.
+Agregada escopeta de doble cañón. (animación + aparición).
+Corregidos algunos problemas extraños con armas.
+Ahora se restablece la posición del botín al transferir cosas
+Ahora se puede recoger vidrio roto (advertencia, si no tienes guantes podrías resultar herido).
+Aumentada tasa de aparición de jabón.
+Disminución del consumo de jabón (*2).
+
+Varios cambios de compatibilidad para futuras actualizaciones de Super Survivors.
+El líquido de limpieza ahora se puede usar para lavarse a uno mismo/ropa (nuevo líquido de limpieza, el anterior no funcionará).
+El tiempo de limpieza ahora depende de la cantidad de sangre/suciedad en la ropa.
+La ropa quedará empapada después de ser lavada a mano.
+Corregida excepción al lavar calcetines.
+Disminuido el tiempo para lavar la ropa.
+Agregadas varias animaciones de retroceso para armas de fuego, cuanto mayor sea el nivel de apuntar, más rápido dispararás + menos retroceso de la animación.
+Agregado cambio entre disparo único/automático para el M16.
+Corregido peso de barra de acceso rápido que tiene prioridad sobre el peso del objeto equipado.
+El tooltip ahora muestra el peso correcto si el arma está en la barra de acceso rápido.
+Equilibrado rifle de asalto
+Corregido: Ampliar sobre agua resulta en cuadrados negros en lugar de agua
+Corregido que el texto post-mortem se renderizara dos veces para los jugadores.
+Corregido error de renderizado de salpicaduras de lluvia en pantalla dividida. 
+Corregido error tipográfico con ISBaseObject.type. Se utiliza Type con mayúscula en varios lugares.
+Corregido reinicio del modelo del jugador al intercambiar objetos de la barra de acceso rápido.
+Corregido avatar de información de personaje que no se actualiza al intercambiar objetos de la barra de acceso rápido.
+Llamar a ISHotbar:refresh() en update(). Mi commit anterior agregó una llamada a triggerEvent("OnClothingUpdate") en IsoGameCharacter.setAttachedItem() lo que podría hacer que refresh() se llame en momentos inesperados.
+Movido IsoGameCharacter.attachedModels a ModelSlot.attachedModels.
+Corregido error en ISAttachedItemsUI.lua cuando los zombis tienen múltiples objetos adjuntos.
+Retraso al restablecer los modelos equipados y adjuntos de un personaje hasta el próximo fotograma.
+Cambiado ISHotbar:update() para manejar InventoryItem.getAttachedSlot() volviéndose inválido por alguna razón.
+Corregido error de cajas de texto que no se destruyen.
+Corregido excepción de barra de acceso rápido después de mover el primer de dos cinturones a un contenedor.
+Corregido que los ajustes de población zombi del juego anterior se aplicaran a los nuevos juegos.
+Corregido que el preset Survivor.lua nunca se cargara.
+Reconstruido libPZPopMan64.so de Linux.
+Disminuida tasa de aparición de casa quemada.
+Corregido que los zombis se consideraran en la espalda al caer por una ventana.
+Ahora se puede lavar a uno mismo sin jabón, pero lleva más tiempo.
+Se limitó el tiempo necesario para lavar la ropa.
+Agregados iconos de portaherramientas.
+
+[VERSION] 41.19
+[SECTION]NUEVO
+Reintegrados zombis velocistas al sandbox.
+Algunas prendas de cabeza ahora tienen la posibilidad de caer al atacar (en zombis y jugadores). Los sombreros ahora se representan como modelos 3D en el mundo.
+Las etiquetas de slot ahora se muestran encima de la barra de acceso rápido cuando el mouse pasa por encima de ese slot. Esto fue para corregir etiquetas que son más largas que el slot. Cuando no hay ningún objeto en un slot, se muestra el icono desvanecido del objeto que proporciona el slot (como un cinturón) en su lugar.
+Nuevos efectos de sonido para colisiones de autos de menor impacto
+Agregados nuevos presets de sandbox a la pantalla de opciones de sandbox. Actualizados todos los archivos de presets de sandbox para que incluyan valores para todas las opciones.
+Agregada calidad estelar para mostrar la durabilidad de los objetos en la barra de acceso rápido.
+El cinturón izquierdo es ahora el primero, luego el slot derecho, esto solo funcionará si desequipas/requipas el cinturón.
+Traducciones comunitarias actualizadas
+Agregado ProjectZomboidOpenGLDebug64.bat que usa lwjgl-debug.jar en lugar de lwjgl.jar para habilitar una verificación de errores extendida. Entre otras cosas, esto llama a glGetError() después de cada llamada de OpenGL.
+Ahora el sigilo consume más resistencia al caminar/correr que caminar/correr normalmente.
+El objeto/ropa equipado ahora está al final del inventario y no en la parte superior.
+Presionar R ahora puede hacer múltiples cosas:
+[NODOT]<INDENT:40> - Si el cargador está en la pistola equipada, deséquipalo, busca un nuevo cargador para insertar.
+[NODOT]<INDENT:40> - Si no se encuentra otro cargador, verifica si podemos cargar balas en un cargador, cuando se haya terminado, recarga/rackeo automático.
+Agregada información de depuración sobre salir y alrededor de guardar el juego al salir
+
+[SECTION]BALANCE
+Cambiadas todas las puertas abiertas para que sean transparentes para ayudar con el combate cuando los zombis están al otro lado de una puerta abierta.
+Si un vehículo está dentro de un garaje, el área del vehículo ahora disminuye ligeramente - para ayudar con el estacionamiento.
+Estadísticas de armas de fuego equilibradas.
+Aumentada la probabilidad de encontrar cargador en armas.
+Mejorados M16 y armas de fuego de fuego automático. 
+Ajustadas algunas apariciones de botín
+Añadida experiencia de carpintería al hacer lanzas.
+Los zombis ahora tienen defensa de acuerdo a la ropa
+Comer alimentos congelados ahora da malus de infelicidad/aburrimiento.
+Reintegradas armas en el spawn
+Disminuida tasa de aparición de gigamart.
+Aumentado el botín de refugio seguro.
+Cambiados los ajustes de rareza de comida de Constructor de "extremadamente raro" a "raro"
+Desactivado el saltar automáticamente sobre vallas cuando no hay suelo al otro lado.
+Agregado un período de gracia durante el cual un ataque de 'Zombi sorpresa en el baño' no causa daño para evitar una muerte instantánea injusta. 
+
+[SECTION]CAMBIOS EN ANIMACIÓN Y MODELOS
+Ajustes en archivos x de chaleco de caza y máscaras para que funcionen mejor juntos
+Ajustado saco de boda para que funcione un poco mejor con suéteres.
+Ajustadas máscaras de chaleco de caza para que funcionen mejor con la ropa
+ 
+
+[SECTION]CORRECCIONES
+Corregido que el jugador caminara en la dirección incorrecta mientras apuntaba con un controlador.
+Corregida posición de barra de acceso rápido en pantalla dividida y después de cambiar el tamaño de la ventana del juego.
+Iconos de ventana faltantes corregidos.
+Moodle de cansancio faltante en el cálculo de probabilidad de golpe para armas de fuego.
+Moodle exhausto no siendo calculado para pisotones.
+Corregido zombis empujando a otros zombis sentados contra una pared.
+Hacha de mano corregida que estaba en rotación incorrecta cuando se adjunta en el cinturón derecho.
+Localizaciones de cuerpo varias corregidas (la máscara de gas podría usarse con gafas, algunos cascos completos, etc.).
+La protección de la ropa podría mostrarse por encima del 100%.
+Esquema de color incorrecto para defensa de mordeduras/rasguños corregido.
+Resistencia no regenerada si la carga pesada era > 0 corregida.
+Moodle de carga pesada nivel 4 que no hacía nada para regeneración de resistencia corregido.
+Nivel de aptitud 10 que te hace correr más rápido (ahora solo afecta a la resistencia).
+Efectos de sonido de rasgado de ropa faltantes corregidos.
+Piedra que no se perdía al crear una lanza a partir de ella corregida.
+Doble creación de lanza con destornillador corregida.
+Cuchillo de cocina faltante agregado a la receta de lanza.
+Automóviles duplicados ocasionales corregidos.
+Zombis que teletransportan a través de paredes al elegir un lugar para sentarse después de cargar parte del mapa corregidos.
+Zombis que nunca se sientan contra paredes del sur o este corregidos. IsoGridSquare.getWallType() buscaba propiedades WallS y WallE que no existen.
+Error de lua al saquear objetos de la barra de acceso rápido de cadáveres corregido.
+Desmontar que no te obligaba a estar de pie corregido.
+Quitar un cargador de un arma de fuego también elimina 1 bala del cargador corregido.
+Algunos errores de lua se imprimían en la consola sin mostrar el cuadro de error rojo corregido.
+Cargador de batería de automóvil que no se renderizaba a veces corregido.
+Algunas mezclas durante el salto sobre corregidas.
+Pausa repentina al final de la ejecución de salto sobre corregida
+Salto sobre sprint que hacía un snap corregido.
+Animaciones de comer y beber que se detenían a mitad de la acción corregidas
+Algunos zombis caminando realmente rápido o demasiado lento corregidos
+Preset de Constructor que se seleccionaba inicialmente en el combobox de "Presets Guardados" del sandbox cuando la configuración real era para Survivor.lua alias Apocalypse corregido.
+El cono de visión del jugador cambiaba de dirección más rápidamente que el modelo está girando corregido.
+Avatar de información de personaje que no se actualiza después de lavar sangre corregido.
+Zombis a veces parados cuando deberían estar persiguiendo al jugador corregidos.
+Cursor iso renderizado al doble del tamaño cuando Texturas de tamaño doble = No corregido.
+Jugadores que no siempre miraban en la dirección que deberían al realizar acciones corregidos.
+Jugador caminando al apagar una alarma que está en su inventario corregido.
+Alarmas de casa que no funcionaban corregidas.
+
+[VERSION] 41.20
+[SECTION]NUEVO
+Agregadas nuevas texturas para zombis y personajes supervivientes.
+Los zombis ahora tienen 3 niveles de descomposición, que se mostrarán según tu tiempo de supervivencia (6 meses después del apocalipsis teniendo muchos zombis de nivel 3 de descomposición, etc.).
+Mapa de Kingsmouth y Studio actualizado, también se cambió su descripción por un marcador de posición y se agregó un thumblr correcto para ellos.
+[SECTION]Cosas de temperatura de personajes:
+Agregado Termorregulador a BodyDamage que maneja todas las cosas de calor del jugador
+Agregada interfaz de usuario y elementos termales del panel de personaje
+Cambios en hambre, sed, fatiga que pueden ser multiplicados debido al estado de termorregulación
+Reformulado daño y penalizaciones de frío/calor
+Cambiada efectividad del paraguas por parte del cuerpo
+Cambiada la probabilidad de resfriarse para medir la temperatura de la piel + humedad por parte del cuerpo, cabeza/cuello/pecho pesan más
+Cambiado el hombre del exterior reduce la probabilidad de resfriarse al 10% de lo normal
+Agregada humedad adecuada al administrador del clima
+Agregados valores de generación de calor corporal a acciones cronometradas, caminar, combate (también un aumento basado en el peso)
+Agregada humedad del cuerpo por parte del cuerpo en lugar de un valor para todo el cuerpo
+Cambios en humedad/secado de ropa, agregada transpiración y calor corporal trabajando las capas de adentro hacia afuera 
+Agregados valores de aislamiento de ropa a nueva ropa, Aislamiento de ropa se puede establecer de 0.0 a 1.0 
+Agregada resistencia al viento de ropa, disminuye el efecto de enfriamiento por viento, se puede establecer de 0.0 a 1.0
+Agregada resistencia al agua de la ropa, 1.0 detiene completamente la absorción (ejemplo poncho) un valor menor lo ralentiza
+Agregada penalización de tiempo para acciones cronometradas cuando las manos/brazos están muy fríos
+Agregado widget de parte del cuerpo al panel de protección
+Cambiado PlayerClimateDebug para mostrar cosas de depuración para termorregulador ahora
+Agregados BodyPartContacts, se pueden usar para determinar qué parte del cuerpo se conecta a otra
+Agregada distancia al núcleo, porcentaje de superficie de piel y modificador de paraguas a BodyPartType
+[SECTION]Agregada Reparación de Ropa:
+Haz clic derecho en un objeto para agregar/quitar parches a la ropa.
+Agregar un parche a un agujero lo elimina, de lo contrario simplemente te da un bono de defensa (necesita agregar más aislamiento si simplemente lo estás mejorando).
+La calidad de la defensa depende del tejido utilizado y la habilidad de sastrería.
+En las próximas semanas se hará una interfaz de usuario para inspeccionar la ropa para que sea menos tedioso a través de submenús.
+Cambiado cómo funciona el rasgado de la ropa para facilitar la actualización cuando se agregan nuevas prendas.
+Ahora se pueden rasgar cosas de cuero/denim para obtener tiras (requiere tijeras).
+Aumentada la tasa general de generación de hilos, también se pueden obtener tiras de cuero al desmontar cosas de cuero (sofá, etc.)
+Las texturas de los parches actualmente son todas iguales sin importar el tejido utilizado, son texturas de marcador de posición.
+[SECTION]Mejoras de armas:
+Ajustada la probabilidad de golpear con armas de fuego: debería ser más fácil y tener una sensación más "lineal" hacia el nivel de puntería ahora.
+[SECTION]Mejoras de los zombis velocistas:
+Ahora solo corren si tienen un objetivo, de lo contrario simplemente caminan.
+Tienen una posibilidad de tropezar y caer cuando corren.
+Corregido zombis corriendo a través de árboles.
+El botón X del controlador ahora transfiere objetos del jugador al contenedor que se muestra en la ventana de botín, en lugar de al suelo.
+[SECTION]Guardado y registros:
+Agregado archivo DebugLog.txt a logs.zip. Este archivo está contenido en el directorio /debug-log/ en el archivo.
+Comprobado que el archivo vehicles.db se guarda en logs.zip. Este archivo está contenido en el directorio /save/ en el archivo.
+Agregado guardar último guardado al iniciar el juego. Estos archivos están contenidos en el directorio /save_old/ en el archivo.
+[SECTION]Mejoras de agua:
+Agregadas Zonas de Agua en los muelles y la casa de botes al norte de Westpoint para arreglar el renderizado con el shader de agua.
+[NODOT]<INDENT:40> No está arreglado al 100%; las baldosas que proporcionan grosor a los muelles no son visibles, y hay un fallo de 1 baldosa donde el muelle se encuentra con la orilla.
+[NODOT]<INDENT:40> Cambiado el código del shader de agua para renderizar en dos pasos, primero las baldosas de agua sólida, luego las baldosas regulares, luego las baldosas de la orilla.
+[NODOT]<INDENT:40> Arregla algunas baldosas ocultas en los muelles/casa de botes al norte de Westpoint, y el puente ferroviario al este de Westpoint. Anteriormente no se podían ver los pisos transparentes en los bordes del puente ferroviario porque el agua los cubría.
+[SECTION]GENERAL
+Agregados algunos modelos de alimentos (principalmente para verduras/frutas).
+Agregada animación de comer de un plato
+Agregados rasgos/libros de sastrería.
+Corregido a veces tener la casa de spawn barricada.
+Movidas habilidades pasivas a la parte superior de la pestaña de Habilidades.
+Transferir objetos por 20 pilas ahora lo hace solo para objetos pequeños (peso <= 0.1) como clavos, balas, etc.
+Cambiados colores de contorno de zombis al apuntar para usar menos rojo oscuro.
+Cambiadas algunas palabras en el menú de reparación.
+Agregado Bob_IdleEatingFromPlate.X y Bob_DrinkFromFloor.X
+Corregido renderizado de charcos encima del agua (cuando no se usa el shader de agua y Pudriciones Dinámicas = Todas).
+Datos de charco corregidos
+[NODOT]<INDENT:40> Esto fue para corregir un error cuando se abría/cerraba una puerta usando un controlador, los charcos aparecían brevemente en un área de 3x3 alrededor de la puerta. No sucedía al usar la tecla 'E', extrañamente.
+Corregido el segundo contenedor en la ventana de botín que se seleccionaba automáticamente en lugar del primero al usar un controlador.
+Corregidas algunas puertas de garaje con paredes detrás de ellas en la celda 25,31.
+Corregido que los zombis heredaban algunas otras distribuciones de habitaciones, lo que hacía fácil cultivar algunos objetos atrayendo zombis a habitaciones específicas.
+Eliminado mensaje emergente de tutorial para nuevos jugadores.
+Corregido que entrar en un vehículo a veces tomaba más tiempo del necesario. Esto parecía suceder cuando el jugador estaba realizando una animación de giro y entraba en el vehículo.
+Corregido renderizado de enredaderas de pared afectado por el viejo círculo-stencil.
+Agregado un retraso antes de la animación de ataque al estado de ataque del zombi en situaciones de pounce instantáneo 100% injustas. La animación dura 1/2 segundo. Esto reemplaza el período de 'gracia' del último parche.
+Eliminado el tiempo de mezcla entre las animaciones de inicio y finalización del ataque de zombi. Esto parecía causar un enganche en la pose del zombi.
+Corregido que el jugador caminara hacia contenedores adyacentes al transferir objetos.
+Corregida la diferencia en cómo se aplica el tinte a los modelos en comparación con la ropa del personaje.
+Corregido que los modos de Superviviente y Constructor no empezaran en julio.
+Corregido que el jugador no se despertara cuando tenía poca salud.
+Corregido que el jugador no se despertara si un zombi destruía algo en la casa (ventana, puerta, barricada, etc.)
+Corregido que a veces el jugador continuara caminando cuando estaba a punto de dormir, lo que lo hacía atravesar paredes, etc.
+Corregido excepción relacionada con texturas al cargar objetos móviles en contenedores.
+Corregido que el sueño terminara demasiado pronto.
+Corregido que el jugador girara mientras saqueaba ya que hacerlo podía cambiar qué contenedores se mostraban.
+Corregido que las texturas de los cadáveres se recreaban cada vez que se cargaba un cadáver.
+Corregido error de lua al descargar balas de un cargador cuando no hay balas en el inventario.
+Corregidos problemas para desmontar vehículos con soplete.
+Corregidos los combobox multiplicados que reducían los fps después de hacer clic repetidamente en el botón Aleatorio en la pantalla de creación de personajes.
+Corregido error tipográfico en ClothingSelectionDefinitions.lua.
+
+[VERSION] 41.21
+[SECTION]NUEVO
+Reemplazado submenú de sastrería con una "Interfaz de Inspección de Ropa" que actúa como el panel de salud.
+Agregados modelos de vendajes visibles en el personaje
+Cambiada la animación al construir paredes de troncos, y ocultar modelos de manos ya que no se requieren herramientas.
+Agregado un "adjunto mundial" a algunos modelos de armas para posicionar y rotarlos correctamente cuando están en el suelo. Esto se usa para que palas y tablones queden planos en el suelo, por ejemplo.
+Agregada opción de visualización de "contorno de objetivo".
+Ahora el jugador desequipa el objeto actual antes de equipar otro cuando ambos objetos están en la barra de acceso rápido.
+Corregidos algunos errores con la Interfaz de Inspección de Ropa y se agregó una barra de condición.
+Modelos de vendajes terminados (¡añadido sucios!)
+Eliminada opción de "Ocultar Nuevo Techo".
+Captura y registro de todos los errores lanzables al guardar el juego.
+Agregados eventos aleatorios de aparición de vehículos: choques de autos, etc.
+Introducidos aspectos de nuevos desafíos: los zombis ahora están activos de noche e inactivos durante el día en Studio, comienzas con una antorcha a la medianoche. Ajustadas opciones de sandbox de Kingsmouth.
+Mejorado la transición a la animación de acción para eliminar los saltos de animación
+ 
+
+[SECTION][CAMBIOS EN EL SISTEMA DE AISLAMIENTO]
+Corregido error que resultaba en ninguna probabilidad de resfriarse cuando las condiciones lo aplicaban
+Reducidas las tasas de aumento/disminución de la generación de calor corporal
+Agregada vista avanzada y aplicados cambios de texto en la pestaña térmica
+Corregidos desplazamientos de temperatura de extremidades para ser más pronunciados
+Cambiados algunos valores internos haciendo que luchar contra el frío sea más difícil según comentarios de prueba, incluyendo: la caída de la temperatura central ahora afecta el total posible de calor generado y la capacidad del cuerpo para seguir luchando contra el frío
+Incrementadas un poco las tasas de consumo de energía/fluido cuando se sobrecalienta/sobre-enfriamiento
+Agregado pequeño aumento en el consumo de energía al generar mucho calor.
+Cambiado que la temperatura de la piel se mueva más rápido cuando vuelve a niveles favorables, para que no tarde tanto en volver a calentarse.
+Corregido error que durante el calor hacía que la piel se calentara demasiado rápido basado en el aislamiento
+Corregidas algunas piezas de ropa de aislamiento
+Cambiado hipotermia etapa 2 para activarse a núcleo 35, en lugar de 33
+Agregado un valor de generación de calor corporal más bajo al agacharse.
+Agregado pequeño bono de aislamiento incremental que afecta principalmente a la ropa de alto aislamiento
+Agregado bonificador adicional de tasa de sudoración más baja para la ropa en temperaturas más frías
+Agregada resistencia al agua a varias chaquetas, pantalones, sombreros y calzado
+ 
+
+[SECTION]BALANCE
+Incrementada un poco la aparición de armas adjuntas a zombis.
+Incrementada la tasa de aparición de aerosoles de jardinería, tijeras, guantes y cuchillos de mantequilla.
+Eliminada la posibilidad de cortar el cinturón.
+Incrementada tasa de aparición de hilos en la cocina.
+Las descripciones emergentes de las ventanas de mecánica ahora muestran la carga de la batería, la cantidad de combustible en el tanque de gasolina, la cantidad de aire en los neumáticos.
+Mejorada la forma en que funciona la opción de sandbox de zombis de ciclo día/noche: cuando está activa, obtienen tus opciones de sandbox. Cuando está inactiva, son muy lentos y débiles, pero aún pueden caminar/atacar.
+Agregada velocidad de zombis reanimados lentos.
+ 
+
+[SECTION]CORRECCIONES
+Posiblemente corregidos zombis caminando en el lugar.
+Corregido que la barra de acceso rápido no se actualizara al reemplazar un portaobjetos con uno doble o viceversa.
+Corregidos pesos personalizados para alimentos y radios artesanales que no se guardaban.
+Corregido "Limpiar Cenizas" que no estaba disponible.
+Permitir que Pala/Pala2/Pala de Nieve/Pala de Mano se usen para limpiar cenizas.
+Corregido error de lua en DebugChunkState mostrando tablas en modData.
+Corregido el error "los vehículos a veces desaparecen hasta que vuelves a cargar el juego".
+Corregido que el jugador quedara atascado al subir por una cuerda de panel de yeso y el camino estuviera bloqueado en la parte superior. El jugador volverá a bajar automáticamente.
+Corregido solape de puerta de garaje y pared en celda 37,22.
+Corregido que los libros de habilidades de sastrería desaparecieran después de ser leídos.
+Corregidos grime/overlays/etc de baldosas quemadas.
+Corregido el error: la opción -Dnosave arroja un montón de errores.
+Corregido que las baterías de automóviles comenzaran con más del 100% de carga a veces.
+Corregido recoger vidrio roto con la herramienta de mover muebles no cortaba las manos como lo hace cuando se hace con el menú contextual.
+Corregido que las puertas de garaje rojas no se pudieran abrir.
+Corregido que "Transferir Todo" no funcionara cuando uno de los objetos era un elemento móvil (mueble).
+Corregido que el agua fría se usara a veces al desinfectar vendajes o hacer bebidas calientes.
+Corregido que la opción de sandbox "Conteo de Zombis" configurara incorrectamente el Multiplicador de Población (desde que se agregó Muy Alto).
+Corregido que se reprodujera la animación incorrecta de trepar sobre la cerca al sostener una pistola.
+Corregido el MEGA TROVÓN después de avance rápido
+Corregido zombis que se levantaban cuando eran golpeados después de trepar sobre una cerca, en lugar de ser pisoteados.
+Corregido error de lua al intentar recargar un cargador cuando no hay balas en el inventario.
+Corregido error de lua al fabricar cuando los objetos necesitan transferirse al inventario principal. (Empacar clavos en múltiples cajas).
+Corregido que no se pudieran usar objetos en la cabeza con monos (ubicaciones FullSuit y FullSuitHead se intercambiaron). Esto debería solucionar que las máscaras de soldar desaparezcan cuando los zombis mueren, si llevaban monos.
+Corregido que se pudiera hacer clic en las puertas para abrirlas/cerrarlas desde demasiado lejos. Ahora el jugador debe estar en las cuadrículas de 2x3 o 3x2 adyacentes a la puerta.
+Corregido golpear árboles a través de paredes.
+Corregido que los corredores de zombis no corrieran hacia un sonido (rompiendo ventanas, TV, etc.)
+Corregido que los corredores de zombis corrieran en círculo alrededor de ti.
+
+[VERSION] 41.22
+
+[SECTION]NUEVO
+Nuevo método para generar historias de vehículos, ahora utiliza intersección de zonas en fragmentos para ser realmente preciso.
+Agregadas más historias de vehículos.
+Agregado nombre del arma en la opción de insertar balas en el menú contextual del arma.
+Agregados sonidos de pasos al caminar apuntando.
+Los estados de ánimo ahora tiemblan y brillan para señalar que el combate está comprometido.
+Actualizadas algunas texturas de vehículos.
+Corregidas algunas superposiciones de daño faltantes en vehículos.
+Incrementada la velocidad máxima de combate para armas pesadas.
+Presionar una de las teclas de la barra de acceso rápido durante medio segundo ahora muestra un menú radial para elegir un objeto para equipar en ese espacio.
+Los objetos de curación pueden ser arrastrados al panel de Salud para tratar lesiones.
+Convertidas cadenas para traductores.
+Todos los contenedores en la ventana de botín ahora se muestran en el área de 3x3 alrededor del jugador.
+[NODOT]<INDENT:40> 1) Esto nos permite agregar de nuevo "girar para enfrentar el contenedor mientras saqueas", porque girar no cambia qué contenedores se muestran en la ventana de botín.
+[NODOT]<INDENT:40> 2) Corrige algunas situaciones incómodas al saquear cadáveres, ya que a menudo el jugador está visualmente sobre el cadáver pero no mira hacia la casilla en la que está el cadáver.
+[NODOT]<INDENT:40> 3) Siempre fue posible para el jugador hacer clic en un contenedor en el mundo y mostrar su contenido en la ventana de botín, incluso cuando el contenedor estaba detrás del jugador y no tenía un botón en la ventana de botín.
+Traducciones actualizadas para español, húngaro, japonés y polaco.
+
+[SECTION]CORRECCIONES
+Corregido óxido de vehículo faltante en efectos.
+Corregido jugador quedando bloqueado en su lugar después de comenzar a recargar/armar un arma mientras apunta.
+Corregido zombis sentados y golpeando siendo empujados por otros zombis.
+Mostrar el ícono 'equipado' en la barra de acceso rápido para objetos sostenidos en una mano.
+Agregada opción "Salir al Escritorio" en el menú principal.
+Ahora el jugador mira la puerta del vehículo al intentar desbloquearla.
+Corregido zombis quedando atrapados en una animación después de que el jugador muere.
+Corregido error de DebugChunkState cuando un estado no estaba expuesto a lua.
+Corregido que zombis sentados a veces miraban en la dirección incorrecta.
+Corregida la posición del ícono "favorito" en la ventana de inventario (estaba recortando la fila de arriba).
+Corregido que se pudiera lanzar un cóctel molotov sin un encendedor en la mano derecha, y el objeto de la mano derecha desaparecía después.
+Corregido que no se pudieran encolar múltiples acciones de cortar árbol.
+Corregido que el botón Continuar omitiera la pantalla de profesión cuando el jugador está muerto.
+Corregidas animaciones de cambio de barra de acceso rápido.
+Corregido el giro de dirección del jugador al cambiar los modelos en la mano del jugador.
+Corregidos saltos al girar el jugador.
+Corregido arrastrar múltiples objetos de curación del mismo tipo al panel de Salud.
+Corregido que al hacer clic en "usar" en una pila de objetos los usara todos.
+Corregido poder abrir infinitas interfaces de Inspección de Ropa.
+Corregido hacer clic derecho en balas necesitando una pistola correspondiente para permitir insertar balas en el cargador.
+Corregido que al hacer clic una vez en balas en el inventario aparecía "insertar munición en el cargador" para cada elemento.
+Corregido que no se pudieran limpiar tiras de cuero/denim sucias.
+Corregido montón de texto superpuesto con GarmentUI para traductor, todo está ahora ligado a varios anchos de cadena.
+Corregido que las configuraciones de botín de sandbox se restablecieran a los valores predeterminados al cargar un juego guardado.
+Corregido que zombis no atacaran a jugadores justo frente a ellos cuando la opción de sandbox "Activo durante el día/noche" no está en "Ambos".
+El encendedor no se queda sin combustible si se usa como fuente de iluminación
+Corregido que los efectos de sonido de pasos descalzos no fueran más suaves que cuando se usan zapatos
+Corregido que la probabilidad de pescar en el nivel 1 fuera demasiado alta
+Corregido que la ropa profesional (por ejemplo, camisa de leñador) desapareciera de la combinación al hacer clic en "Aleatorio"
+Corregido faros de vehículo rompiéndose demasiado fácilmente
+Corregido estado de pin para menús de inventario que no se guardaba
+Corregido que no fuera posible recuperar y reparar un arma usada en la creación de lanza
+Corregido que las secadoras tuvieran opción de beber
+Corregido error de lua con paredes de pintura
+Corregido que la pesca con una lanza tuviera efectos de sonido incorrectos
+Corregido efecto de sonido cuando se destruye una puerta siendo demasiado fuerte
+Corregida descripción incorrecta de estado de ánimo de alta exigencia
+Corregidos problemas del sistema de protección de árboles/ropa
+Corregido acción de cavar tumbas no teniendo efectos de sonido para todas las herramientas
+Corregido error de lua con sirena de vehículo
+Corregido una 'Cavar' agrícola siendo confusa debido a diferentes acciones de cavar - ahora 'cavar surco', etc.
+Corregido que no se reprodujera el sonido de golpe del arma (silbido del bate de béisbol, por ejemplo).
+Corregido que HitVehiclePartWithWeapon y HitVehicleWindowWithWeapon no se reprodujeran, y que usara el sonido de golpe de zombi.
+Corregido que los sombreros cayeran varias veces de los zombis jugadores reanimados.
+Corregido contorno de objetivo para jugadores de pantalla dividida que se renderizaba en la pantalla del primer jugador.
+Corregido que los efectos climáticos no se renderizaran para jugadores de pantalla dividida.
+Corregido que se mostrara el color incorrecto de la ropa en la pantalla de creación de personajes al seleccionar elementos.
+Corregido que a los pasajeros no se les permitiera leer libros en vehículos en movimiento (el conductor aún no puede).
+Corregidos problemas con puertas de garaje con paredes detrás en celdas 22,33 y 27,33.
+Corregido que SmithingMag4 se convirtiera en SmithingMag3 al leerlo.
+Corregido posible puntero nulo para RVSCarCrashCorpse.
+Corregido girar nuevamente cuando ya se enfrenta en la dirección al realizar una acción.
+Corregido salto de animación del jugador al girar en ISMultiStageBuild.
+Corregido que la dirección del vehículo se volteara como las paletas de un pinball cuando los fps son bajos.
+Corregido error de búsqueda de ruta que resultaba en mensajes de "WalkTowardState pero path2 != null".
+Corregidos errores de lua al presionar teclas de acceso rápido durante la carga del juego.
+Corregido excepción con PolygonalMap2.intersectLineWithVehicle().
+Corregido error de lua en ISRepairEngine.
+Prohibida la lectura de libros de habilidades que son de nivel demasiado alto. El jugador leerá un poco y luego se detendrá después de decir "No entiendo..." etc.
+Corregido que IsoWorldInventoryObject a veces usara las texturas más pequeñas de WItem_xxx.
+Corregido duplicación de autos.
+Corregido que los faros del vehículo no se eliminaran cuando se destruían, emitiendo luz cuando estaban rotos.
+
+[VERSION] 41.23
+
+[SECTION]NUEVO
+Cambio de color de los botones que no son de icono al hacer clic en ellos para obtener retroalimentación visual.
+Agregadas nuevas opciones de botín para sandbox:
+[NODOT]<INDENT:40> - Comida enlatada, Médica, Mecánica, Equipos de supervivencia, Armas de fuego, Munición, Literatura.
+[NODOT]<INDENT:40> - Al cargar un juego anterior, estos nuevos modificadores de botín se basarán en los existentes (entonces, armas de fuego/munición tomarán el modificador de armas, los otros tomarán el modificador de "Otros" botines).
+Eliminado el Tutorial del menú principal.
+
+[SECTION]BALANCE
+Los zombis tienen menos probabilidad de detectar al jugador durante la noche (ya estaba, pero ocurría solo durante la noche realmente oscura, se redujo un poco el umbral).
+Reducida a la mitad la probabilidad de encasquillar un arma.
+Crecer el cabello ahora lleva 20 días en lugar de 30.
+Equilibrio del peso de algunas prendas.
+La profesión de Ladrón ahora puede "puentear" vehículos y tiene menos probabilidad de romper la cerradura al abrir ventanas.
+Duro de oído ahora otorga 4 puntos (antes 2).
+Aumentado el costo de ThickSkinned a 8 puntos (antes 6).
+Aumentados los puntos dados para ThinSkinned a 8 (antes 6).
+Algunos rasgos relacionados con el peso ahora reducen la condición física.
+Los rasgos relacionados con el peso ahora tienen un mayor impacto en la probabilidad de fallar al trepar cercas grandes.
+Corregido Nightowl, ahora funciona correctamente.
+Ser Hemofóbico y tener sangre en tu ropa ahora aumenta lentamente el pánico.
+Más indulgente sobre la dirección hacia la que el jugador está mirando al saltar automáticamente sobre cercas.
+
+[SECTION]CORRECCIONES
+
+Solución temporal para Kingsmouth colgado mientras guarda. La isla está rodeada de agua, lo que impide que el juego encuentre un camino para reaparecer zombis.
+Zombis fingiendo estar muertos en desafíos de Casa en el Bosque corregidos.
+Corregido parpadeo de paredes en avance rápido.
+Corregido cambio aleatorio de pieles de zombis.
+Corregido que cinturones, etc. no se secaran con el tiempo cuando se llevaban puestos.
+Corregidos sonidos de pasos de zombis faltantes para zombis de movimiento lento y corriendo.
+Corregido que los volúmenes de IsoGameCharacter.DoFootstepSound(String) se ignoraran.
+Corregido que zombis corredores se lanzaran a toda velocidad a través de árboles y arbustos.
+Corregidos problemas de animación y giros al realizar acciones médicas en un jugador de pantalla dividida.
+Corregidos modelos de vendajes que aparecían en el doctor en lugar del paciente en pantalla dividida.
+Corregido que al hacer clic rápidamente en un botón, ignoraba cada segundo clic (los botones estaban ignorando dobles clics).
+Corregido la rotación del modelo de Sartén cuando está en el suelo.
+Corregidos Revólver y escopeta de doble cañón atascándose.
+Corregido que el modelo de vendaje invisible (usado para aplicar el modelo de vendaje al jugador) tuviera un peso de 1.0 (ahora es 0).
+Corregido a veces el modelo de vendaje no se eliminaba (por ejemplo, al ser mordido).
+Corregido zombis atacando mientras todavía están girando para enfrentar al jugador. Esto era más notable cuando el jugador estaba sentado en un vehículo; un zombi caminaría hasta la ventana del vehículo, luego atacaría mientras giraba 90 grados. También podía ocurrir al abrir una puerta con un zombi detrás, o al girar una esquina hacia un zombi.
+Corregido el comando del menú contextual del inventario "Mover a > Suelo" moviendo los elementos al inventario del jugador pero sin soltarlos en el suelo.
+Corregido NullPointerException en IsoMovingObject.checkHitWall() cuando los fragmentos adyacentes no se habían cargado.
+Corregido que al salir de un vehículo se reprodujera la animación de reacción al golpe del jugador. Parecía que el zombi golpeaba al jugador desde el otro lado del vehículo.
+Corregido que a veces el jugador moría dos veces mientras lo arrastraban al suelo.
+Corregidos varios problemas con zombis conociendo la ubicación de los jugadores durante un período después de perder la línea de visión.
+Corregido que zombis vieran al jugador detrás de ellos tan pronto como escuchaban el ruido del jugador. Ahora no ven al jugador hasta que se han girado lo suficiente.
+Corregido que las acciones de metalurgia fallaran porque la Máscara de Soldador ya no se puede equipar en la mano. Ahora se lleva puesta.
+Corregido ataques al suelo golpeando puertas, árboles, etc.
+Corregido un poco de código de depuración bloqueando el hilo principal en cada fotograma.
+Corregido ISInventoryTransferAction fallando si el elemento ya está en el contenedor de destino. Esto soluciona el problema de no poder poner gas en un vehículo cuando la Lata de Gas está en una bolsa para empezar.
+Corregido exploit de duplicación de objetos que involucraba cadáveres.
+Corregido NullPointerException en ThunderStorm cuando la casilla actual del jugador es nula.
+Corregido jugadores que se manchan de sangre después de disparar a zombis desde la distancia.
+Corregido VehiclesDB no informando muchos errores de guardar/cargar. Ahora usa el pequeño cuadro rojo de condenación.
+Corregido error de múltiples subprocesos con la base de datos de jugador/vehículo. Los archivos existentes con datos de vehículos ya corruptos lanzarán excepciones repetidamente.
+Corregido VehiclesDB lanzando excepciones repetidamente si BaseVehicle.load() fallaba
+Corregido NullPointerException en IsoPuddlesGeometry.
+Corregido VERSION=1 no siendo escrito en keys.ini en algunos casos.
+
+[VERSION] 41.24
+
+[SECTION]NUEVO
+Agregado "zombie alertado por giro".
+Cuando trepas por una ventana y un zombi bloquea el paso, haciéndote retroceder dentro de la casa, el zombi emitirá un sonido para que sepas que está ahí.
+Ahora puedes disparar a las ventanas (se resaltarán si están dentro del rango/dirección).
+El juego ahora detecta cuando los zombis han estado caminando en el mismo lugar durante varios segundos y luego dejan de moverse.
+Los grupos de zombis que atacan vehículos ahora están mejor coordinados para evitar que caminen eternamente hacia un vehículo al que no pueden alcanzar.
+Agregada predicción para combate cuerpo a cuerpo. Si estás atacando a un zombi que se está lanzando hacia ti, aumentamos virtualmente el alcance del arma para detectar un ataque, esto debería hacer que la animación de "fallo" se reproduzca mucho menos cuando realmente golpees al zombi.
+Los conductores ahora miran hacia atrás cuando el vehículo se está moviendo en reversa. Esto soluciona que los jugadores no puedan ver el vehículo en el que se encuentran al retroceder en áreas no visibles. Los conductores y pasajeros pueden mirar alrededor manteniendo presionada la tecla de apuntar o el joystick derecho del controlador cuando las ventanas no están abiertas.
+Control-rueda de ratón ahora cambia entre contenedores en la ventana de inventario y botín cuando el ratón está sobre la lista de elementos.
+Mejoras en la calidad de vida para tomar tierra/grava/arena.
+[NODOT]<INDENT:40> 1) Se elige automáticamente la bolsa más llena del inventario (y en mochilas) en lugar de tener que elegir una de un submenú.
+[NODOT]<INDENT:40> 2) Se muestra un cursor para seleccionar ubicaciones para tomar. Esto permite al jugador hacer clic cuatro veces seguidas para llenar una bolsa, en lugar de tener que hacer clic derecho y elegir la misma acción cuatro veces desde el menú contextual.
+Mejoras en la calidad de vida para verter tierra/grava/arena.
+[NODOT]<INDENT:40> 1) El cursor muestra un contorno verde o rojo para que sea más fácil de ver.
+[NODOT]<INDENT:40> 2) Se elige automáticamente la primera bolsa no vacía del inventario (y en mochilas) en lugar de tener que elegir una de un submenú.
+Los zombis ahora no se levantarán si un jugador está parado sobre ellos.
+
+[SECTION]BALANCE
+Reducido el daño causado al caer desde ventanas de 2 pisos.
+Corregido que tener un peso inferior/muy inferior causara muerte inmediata al caer desde ventanas de 2 pisos y estar sobrecargado.
+Permitir que los zombis lanzados se trepen sobre cercas y a través de ventanas en lugar de caminar en su lugar contra ellas.
+Agorafobia/Claustrofobia ahora son mutuamente excluyentes.
+Aumentados los puntos hemofóbicos dados a 5.
+
+[SECTION]CORRECCIONES
+
+Corregido que las opciones sandbox "ningún zombi" todavía generaran zombis en las historias de vehículos.
+Corregido que todavía se girara hacia algunos objetos al hacer varias acciones cuando no era necesario (llenar botella de agua).
+Corregido que los zombis golpeando vehículos no atrajeran a otros zombis (faltaba WorldSound).
+Corregido que AttackState borrara StateMachineParams (para todos los estados, en lugar de solo AttackState).
+Corregidos dos errores de multiprocesamiento.
+Corregido no poder atacar después de cerrar un mapa cuando se usa un controlador.
+Corregido Transferir Todo moviendo elementos del hotbar.
+Corregido que el estrés hemofóbico aumentara más rápido a velocidades de fotogramas más altas.
+Corregido que el jugador quedara atascado en el estado de pesca si realizaba otras acciones mientras pescaba.
+Corregido que conducir a través de bosques fuera irregular incluso cuando se habían colocado pisos de madera.
+Corregido NullPointerException en IsoGridSquare.RenderOpenDoorOnly() cuando hay fuego en una casa.
+Corregidos botones bloqueados en la pantalla de Nuevo Juego después de borrar el último archivo de guardado.
+Corregido no poder tomar agua de charcos si Skybox Dinámico = No.
+Corregido que los lavabos empotrados tomaran agua de charcos.
+Corregido que Bloquear Framerate = Sin límite no se guardara.
+Corregido BodyPart.RestoreToFullHealth() que no detenía el sangrado.
+Corregido jugadores invisibles y otros errores al generar un jugador de pantalla dividida en la misma ubicación que el otro jugador.
+Corregido IsoPlayer.getJoypadAimVector() y IsoPlayer.getJoypadMoveVector() haciendo sqrt(x * x + y + y).
+Corregido que los pasajeros vieran la indicación "B para Freno" al usar un controlador.
+Corregido que DebugChunkStateUI no actualizara la pantalla al seleccionar nuevos cuadros.
+Prohibir usar el nombre de un directorio existente al crear un nuevo juego.
+Prohibir ingresar varios caracteres inválidos en el campo de nombre de archivo de guardado al crear un nuevo juego.
+Corregido poder hacer doble clic en una ubicación de aparición para avanzar a la siguiente pantalla cuando se ingresaba un nombre de archivo de guardado inválido.
+Corregido que no se generaran zombis comiendo cadáveres dentro de habitaciones.
+Corregido que se generaran zombis comiendo cadáveres en una habitación cuando se desactivaba la generación de zombis. 
+Corregido que se generaran zombis comiendo cadáveres con una pared o puerta entre el cadáver y el zombi. Intentar más duro para encontrar un lugar para generar un cadáver dentro de una habitación, en lugar de elegir siempre el centro.
+Corregido que las salpicaduras de sangre hacían que los arbustos y árboles se movieran.
+Corregido no poder caminar fuera del suelo en todas direcciones después de construir una nueva escalera.
+Corregido cadáveres/objetos/zombis en habitaciones generándose en áreas inaccesibles detrás de escaleras (cuando el área es solo de 1x1 o 2x1 o 1x2).
+
+
+[VERSION] 41.25 y 41.26
+
+[SECTION]NUEVO
+Revisado sistema de modificación:
+[NODOT]<INDENT:40> - Actualizada la pantalla de Mods. La descripción del mod se muestra para el mod seleccionado en el lado derecho de la pantalla, en lugar de en la lista de mods. Otros detalles como el ID, ID de taller (si lo hay), directorio de instalación y cualquier póster se muestran a la derecha.
+[NODOT]<INDENT:40> - mod.info puede tener múltiples líneas poster= para especificar múltiples imágenes en la pantalla de Mods.
+[NODOT]<INDENT:40> - mod.info puede tener múltiples líneas description= que se suman a la descripción total.
+[NODOT]<INDENT:40> - La pantalla de Nuevo Juego tiene un botón para elegir qué mods están habilitados para el nuevo juego.
+[NODOT]<INDENT:40> - Cada archivo de guardado tiene su propia lista de mods guardada en un archivo llamado mods.txt. mods.txt también tiene una lista de carpetas de mapas que se utiliza en casos donde partes de diferentes mapas se superponen entre sí.
+[NODOT]<INDENT:40> - La pantalla de Cargar Juego muestra las carpetas de mapas y los nombres de los mods utilizados por el archivo de guardado seleccionado. Dado que los antiguos archivos de guardado no tienen un archivo mods.txt, se utilizan todos los mods actualmente habilitados al cargar un archivo de guardado antiguo. Después de cargar un archivo de guardado antiguo por primera vez, los mods para ese archivo de guardado no se pueden cambiar, excepto editando o eliminando mods.txt.
+El antiguo archivo Zomboid/mods/loaded.txt ha sido reemplazado por Zomboid/mods/default.txt. Este archivo contiene el conjunto predeterminado de mods habilitados que se utilizarán al crear un nuevo juego. Los mods predeterminados pueden ser anulados al crear un nuevo juego en la pantalla de Nuevo Juego.
+default.txt también contiene la lista de carpetas de mapas que anteriormente se guardaban en options.ini (la antigua configuración "mapOrder" que se usaba para tratar con mapas superpuestos). Si no hay conflictos de superposición de mapas, esta lista de carpetas de mapas está vacía.
+Agregada bBeingSteppedOn IsoZombie GameVariable para probar si un jugador (o zombi) está parado sobre un zombi en posición prona. Originalmente iba a usarse esto para evitar que los zombis fingieran estar muertos cuando el jugador estuviera parado sobre ellos. Los zombis en posición prona no se levantarán si otro zombi está parado sobre ellos.
+Cambios en la creación de personajes:
+[NODOT]<INDENT:40> - Ahora se puede guardar/cargar atuendo (ropa, m/f, nombre).
+[NODOT]<INDENT:40> - Ahora se puede seleccionar la textura cuando el artículo utiliza múltiples texturas pero no colores (los jeans vienen en 3 colores, pero se elegía uno aleatorio cada vez).
+Ajustes en lavado de ropa en fregaderos:
+[NODOT]<INDENT:40> - La ropa se lava un artículo a la vez.
+[NODOT]<INDENT:40> - Los artículos se lavan en orden de menos sangrientos a más sangrientos cuando se elige Lavar > Todo.
+[NODOT]<INDENT:40> - Las descripciones emergentes del menú contextual muestran la cantidad requerida de jabón y agua.
+[NODOT]<INDENT:40> - Se utiliza la cantidad correcta de jabón y agua.
+Se agregó una opción de visualización para especificar qué tecla modificador se utiliza en combinación con la rueda del ratón para cambiar entre contenedores en las ventanas de inventario y botín. El valor predeterminado es Shift.
+El comando de menú contextual "Ir a" muestra un cursor para especificar la ubicación a la que se desea ir. Esto permite al jugador hacer clic varias veces sin tener que elegir nuevamente el comando "Ir a", facilitando los largos paseos por los bosques.
+Los artículos ahora se colocan en un cuadro adyacente no lleno al soltarlos en el suelo. Esto es necesario ya que la ventana de botín muestra artículos de los cuadros circundantes de 3x3, y cada cuadro solo puede contener 50 de peso.
+Se agregó una opción (en Accesibilidad) para soltar artículos cerca del centro del cuadro en el que se encuentra el jugador, en lugar de exactamente donde está parado el jugador, para los obsesivos por la limpieza.
+Los artículos ahora se transfieren de más liviano a más pesado, para maximizar la cantidad de artículos que se transferirán.
+La animación ahora se reproduce al transferir artículos entre el inventario principal y las bolsas equipadas.
+La distancia e intensidad de los faros del vehículo se basan en la condición de la pieza en lugar de establecerse aleatoriamente al crear el vehículo. El ancho del foco del faro también se basa en la condición de la pieza. Se eliminaron los comandos de menú contextual de Enfoque Arriba y Enfoque Abajo que cambiaban el ancho del faro.
+
+Traducciones de la comunidad actualizadas.
+Se agregó un panel de advertencia que aparece la primera vez que el usuario intenta acceder a la pantalla de Mods.
+Se agregó la palabra "ERROR" a la pequeña caja roja de la perdición.
+Los zombis ahora pueden tener vendajes aleatorios (¡sangrientos!) en ellos, ¡gracias a Captain Australia en Reddit por la idea!
+Superposiciones actualizadas
+
+[SECTION] BALANCE
+
+Limitadas las fuerzas aplicadas a los vehículos al conducir sobre cadáveres para evitar despegues.
+Agregado kit de costura (icono pendiente) a la tabla de botín de cocina, que contiene agujas/hilo y algunas tiras para arreglar la ropa.
+Agregada trampa para ratones en las distribuciones aleatorias de cocina.
+Prohibido construir cercas de alambre de púas sin un poste de cerca conectado o un segmento de alambre de púas.
+La paleta de colores en la creación de personajes ahora no favorece demasiado los tonos de rosa y verde sobre otros.
+Ahora el cuchillo de pedernal tiene una receta de fabricación.
+Ahora es posible recuperar y reparar un arma utilizada en la creación de lanzas.
+El pisoteo con el muslo/tibia/pie fracturados ahora afecta la precisión del pisoteo.
+Al pisotear a varios zombis, el jugador ahora elige el que tiene la cabeza más cercana. Anteriormente, la distancia al zombi no se consideraba, aparte de estar dentro del alcance de pisoteo.
+Se permite al jugador soltar artículos mientras se mueve, para evitar muertes injustas.
+Se cambió el peso de los tornillos para que coincida con el de los clavos.
+Se cambió IsoGameCharacter.maxWeight de Integer a int.
+Se redujo el daño a los faros por golpear zombis.
+Se agregó más predicción de ataque para la detección de zombis parados/en el suelo.
+Se movieron los beneficios de sastrería de Superviviente a la subcategoría de Elaboración.
+Se cambió el cuchillo de pedernal a cuchillo de piedra (usando una piedra afilada).
+Se aumentó la tasa de aparición del reloj digital.
+Se redujo la probabilidad de algunas eliminaciones de cascos.
+Ahora se puede sujetar el cuchillo de carnicero al cinturón.
+Cuando un automóvil aparece en historias de zombis (policías, bomberos...), la llave del automóvil se puede encontrar en uno de los zombis que aparece con él.
+Se redujo la condición general de los automóviles que aparecen en historias de casas.
+Se cambió el nombre de Key a House keys.
+Ahora la llave de la casa puede aparecer en el mostrador de la cocina.
+Los bomberos en historias de casas quemadas ahora generan un vehículo de bomberos.
+Agregada animación para beber de una olla.
+Ahora se puede usar el Cuchillo de Piedra en varias recetas (cortar animales, pescado, crear estacas...)
+
+Algunos cambios en la IU de recolección:
+La recolección ahora no cierra la IU.
+Se agregó una barra de progreso en la IU al recolectar.
+Los artículos recolectados se mostrarán a la derecha.
+Ahora se puede filtrar por "carnadas para pescar".
+El filtro de animales aún obtiene todas las carnadas para pescar también.
+Los gusanos ahora se pueden encontrar en el nivel 0.
+
+[SECTION][CORRECCIONES DE RECORTE]
+
+Recortes - [Error] No se puede ver al personaje a través de algunos objetos
+Recortes - No se puede ver el interior de una casa a través de una ventana que mira hacia la esquina superior derecha
+Recortes - Las paredes recortadas vuelven a subir al intentar abrir una ventana, incluso cuando no tiene éxito.
+Recortes - Ocultar los aleros en los techos cuando todo el edificio está oculto/transparente
+Recortes - Las paredes hechas por el jugador no muestran paredes, marcos de ventana, marcos de puerta en el norte y oeste cuando se construyen en Z>0.
+Recortes - El sistema de recorte de paredes no oculta suficiente de las paredes hechas por el jugador
+Recortes - Problema de recorte de pared cuando está cerca de una ventana
+
+[SECTION]CORRECCIONES
+
+Corregido ventajas dadas a través de cancelar ataques (IMPORTANTE: Si prefieres jugar con la capacidad de caminar mientras atacas zombis (kiting), entonces esto es posible deshabilitando la Interrupción de Movimiento en Combate Cuerpo a Cuerpo en las opciones de Sandbox)
+Corregido bloqueo de animación del jugador cuando se rompe el arma después de dispararla.
+Corregidos cadáveres de blob en las zonas de McCoys y prisión.
+Corregida la mezcla de animación equivocada de un zombi reutilizado del anterior que estaba reproduciendo antes de que el zombi fuera eliminado del mundo.
+Corregido el Sonido de Dolor incorrecto que se reprodujo para los zombis después del intercambio entre hombre/mujer.
+Corregido que retroceder sobre cadáveres no reprodujera un sonido.
+Corregidos un montón de errores en la reparación de generadores (los beneficios no se estaban calculando, también ahora da exp. eléctrica).
+Corregido el ajuste en las acciones de agricultura debido a la espera para que termine de girar antes de reproducir la animación
+Corregido que el jugador recibiera daño por cargas pesadas al descansar, sentarse o dormir.
+Corregido vehículos recibiendo daño por caídas cada vez que se cargaban. No sucedía siempre, posiblemente solo cuando dos vehículos se tocaban.
+Corregidos problemas con el apuntar a las ventanas y disparar a los zombis a través de las ventanas.
+Corregido que no se cargaran modelos con I mayúscula en el nombre de archivo usando el idioma turco.
+Agregados accesorios "world" a más modelos de armas para que estén centrados y acostados en el mundo.
+Corregido que los zombis a más de 10 cuadrados de distancia tuvieran una probabilidad negativa de detectar al jugador.
+Corregido que no se pudiera construir cercas de alambre de púas en una dirección.
+Corregido que los zombis golpearan los postes de las cercas.
+Corregido que los zombis fingieran estar muertos a veces aparecieran desnudos hasta que el jugador se acercara.
+Corregido que no hubiera espera para que termine de girar antes de comenzar ISBuryCorpse.
+Corregido que los artículos de inventario mostrarán el resaltado verde de acción temporizada después de que las acciones terminaran.
+Corregido que el jugador continuara moviéndose mientras dormía a veces.
+Corregido error de Lua después de hacer clic en Continuar después de que se eliminara el último archivo de guardado reproducido.
+Corregido que la linterna no se consumiera de las bolsas o en el suelo al fabricar Lámpara sobre Pilar.
+Corregido que el estado de la batería no se conservara al instalar una radio en un vehículo. Cambiado ConditionMax de 10 a 100 para los elementos de radio que se pueden instalar en vehículos.
+Corregido que no se pudiera quitar un parche de ropa sin tener material de parche en el inventario.
+Corregido que la descripción emergente de la ropa usara el jugador incorrecto en pantalla dividida.
+Corregidos IDs de mod para mods eliminados que no se eliminaron de mods/default.txt, lo que resultó en que se agregaran a mods.txt para nuevos juegos.
+Corregido problema de filtrado de textura que afectaba a las barras de desplazamiento y la consola de depuración a veces.
+Corregido que se pudiera beber de una lavadora
+Corregido que no se pudiera poner un cadáver en una tumba sin una pala
+Corregido que el helado fresco y congelado tuviera valores negativos de aburrimiento / felicidad por alguna razón inexplicable
+Corregido que los sombreros en el inventario del personaje (no usados) también se mojaran/empaparan
+Corregidas traducciones para nuevos modos de juego que no se utilizaban en la IU de Cargar Juego y el texto posterior a la muerte.
+Corregido que los jugadores zombificados no se levantaran debido a que otros zombis estaban parados sobre ellos.
+Corregido que las traducciones de modo de juego no se utilizaran en algunos lugares.
+Prohibido cavar tumbas por encima del nivel del suelo. La gente podría poner tierra en un techo y luego cavar una tumba en el techo.
+Corregido que arrastrar elementos de una bolsa al suelo no los desempaquetara primero, como se hacía al hacer clic en el botón de Soltar.
+Corregido que las cercas militares fueran escalables cuando miraban hacia el sur o el este.
+Corregido que se agregaran nuevos modelos de vendajes cada vez que se cargaba el juego, lo que resultaba en que los modelos de vendajes no se eliminaran.
+Corregido que una mayor calidad de motor redujera la probabilidad de iniciar un vehículo.
+Corregido que el clima más frío aumentara la probabilidad de iniciar un vehículo.
+Corregido que la calidad del motor del vehículo a veces fuera menor que cero o mayor que 100.
+Corregido el renderizado de interruptores de luz, estantes y otros objetos que están en el lado sur o este de un cuadro. Esto también soluciona el renderizado de puertas que se abren en la dirección opuesta a la mayoría de las otras puertas (doble puertas en Westpoint Gigamart y la iglesia, por ejemplo).
+Corregida la colocación de sábanas en puertas que se abren en la dirección opuesta a la mayoría de las otras puertas.
+Corregidas las ventanas enmarcadas que no tienen ventana (como los marcos de ventana de carpintería).
+Corregido que no se pudieran construir puertas en un cuadro en el que un jugador o zombi esté parado.
+Corregido que el trabajo en metal no utilizara elementos en el suelo.
+Corregido que el trabajo en metal no equipara una Soplete no vacía si se tiene equipado un Soplete vacío.
+Corregido que las bolsas no vacías se permitieran pero no se usaran al hacer carpintería (crear un barril para la lluvia, por ejemplo).
+Corregido que los elementos Antorcha y Cuerda en el suelo no se permitieran al crear Lámpara-Sobre-Pilar.
+Corregido que las descripciones emergentes bloquearan el movimiento del mouse sobre los menús contextuales.
+Corregidas propiedades de algunos interruptores de luz (attachedE, attachedS).
+Corregidas propiedades de algunos sprites de superposición en tiledefinitions_overlays.tiles.
+Corregido que la ropa en zombis y en el suelo no se mojara más con la lluvia.
+Corregida la lectura innecesaria del contenido del directorio al buscar archivos mod.info. Esto ralentizaba la activación de mods por primera vez.
+Corregido que los efectos de agua se animaran mientras el juego estaba pausado.
+Corregido error de Lua al crear un jugador de pantalla dividida.
+Corregido que el personaje atravesara los contenedores de compost haciendo que fueran solidtrans
+Corregido que los personajes atravesaran las lámparas-sobre-pilar haciéndolos solidtrans
+Corregido que las paredes de troncos no fueran transparentes como las cercas altas. (no transparencia de LOS)
+Corregido que la imagen del archivo de guardado no se actualizara después de jugar y luego salir al menú principal.
+Corregido que DebugOptionsWindow fuera más alto que la pantalla a veces.
+Corregido que se pudiera correr sigilosamente/correr sigilosamente bajo cuando se tenía lesiones en los pies.
+Corregido que hacer estacas no diera exp. de trabajo en madera.
+Corregido que se pudiera quitar la batería mientras el motor del automóvil estaba en marcha.
+Corregido beber de un bol. (¡la animación de beber de una olla está en camino!)
+Corregido que beber de una lata de refresco tuviera un problema de sincronización.
+Corregido que se aplicaran modelos de vendajes duplicados y modelos de daño corporal a los zombis a veces.
+Corregido que un zombi se pusiera de pie después de golpearlo después de que trepara sobre un mostrador. Un zombi todavía se pondrá de pie si es golpeado mientras está en el mostrador.
+Corregido que replaceOnUse/replaceOnDelete no estableciera favorito si el elemento anterior era favorito.
+Corregido que destruir cosas no tuviera un modificador de calorías.
+Corregido que los garajes junto al río no tuvieran su tabla de botín.
+
+[VERSION] 41.27
+
+Revertimos (por ahora) la corrección de la cancelación de ataques mientras trabajamos en una solución más elegante para el parche de la próxima semana.
+Agregada la opción de Interrupción de Movimiento en Combate Cuerpo a Cuerpo que faltaba en las opciones de sandbox.
+
+[SECTION][Cambios en la IU de Recolecta:]
+
+Corregidos algunos errores tipográficos.
+La acción de recolección ahora continuará hasta que la detengas o la zona esté vacía.
+Muestra la abundancia de botín en la zona actual.
+Solo se puede abrir una instancia de la IU a la vez.
+Reducida la cantidad de piedras encontradas.
+Ahora puedes seleccionar una de tus bolsas equipadas para dejar caer directamente los objetos recolectados en ella. Si la bolsa está llena, irán al inventario principal o al suelo.
+
+Corregido que los objetos en las bolsas no se utilizaran al hacer carpintería.
+Cambiado el valor predeterminado de "Soltar objetos cerca del centro del cuadro" a falso, para que los objetos se suelten bajo los pies del jugador como antes.
+Corregido que no se pudiera hacer clic en los contenedores de carpintería para mostrar su contenido en la ventana de botín, si el contenedor estaba más transparente debido a estar delante del jugador.
+
+[VERSION] 41.28
+
+[SECTION]NUEVO
+Optimización experimental. Esto permite que los zombies se actualicen cada X fotogramas mediante un multiplicador de tiempo de juego por objeto que depende de la proximidad / visibilidad al jugador. Distribuye los ticks de actualización de los zombies a lo largo de los fotogramas, lo que significa un mayor FPS con multitudes grandes.
+Acompañando lo anterior, se agregaron opciones de 'actualización de zombies escalonada' (activadas por defecto) que actualizarán a los zombies a una distancia / fuera de la vista con menos frecuencia para que las hordas tengan un mejor FPS.
+Algunas correcciones para abordar la cancelación de ataques. Avísanos cómo funciona.
+Agregado canal de radio de Emergencia Automatizada
+Se hizo la lluvia un poco más suave, y cuando está bajo techo, se reduce a la mitad la opacidad
+Agregada opción para desactivar completamente la lluvia bajo techo
+Agregada opción multiplicadora para el tiempo que permanecen visibles los canales de radio
+Agregado encriptador computarizado a la radio de Zomboid
+Actualizaciones de traducciones de la comunidad.
+
+Mejoras en la IU de Recolecta:
+Ahora muestra una lista de los objetos encontrados, con sus texturas.
+La IU es más transparente.
+El botón de cancelar ahora solo cancela la acción actual.
+Se agregó un botón de cerrar para cerrar la IU.
+
+Mejoras en la IU de Pesca
+Ahora utiliza el mismo modelo de IU que la de Recolecta.
+Puedes seleccionar cañas/señuelos
+Puedes seleccionar bolsas para poner los peces atrapados (como en Recolecta).
+
+[SECTION]BALANCE
+Aumentado el bono de sigilo cuando estás detrás de ciertas cercas.
+ 
+[SECTION]CORRECCIONES
+Corregido error de lua al presionar el botón de Crear Todo cuando hay objetos en bolsas.
+Corregido error de redondeo que impedía que los objetos con peso de 0.1 fueran movidos en múltiplos.
+Corregido RuntimeException al tener la Hoguera encendida dentro de un edificio.
+Corregido RuntimeException al recoger un televisor.
+Corregido InvocationTargetException al recoger una Barbacoa que está ardiendo (la barbacoa ahora no se puede recoger cuando está ardiendo, demasiado caliente).
+Corregido NullPointerException + Crasheo del juego después de conducir desde WestPoint a Muldraugh (RVSContructionSite).
+Corregido avance rápido a través del evento del Helicóptero que continúa durante un par de días.
+Corregido quedarse atascado cuando se rompe la caña de pescar mientras se está pescando.
+Corregido que el color de la noche no se aplicara.
+Corregido que las puertas abiertas cortaran la máscara climática cuando no estuvieran visibles.
+Corregida la inconsistencia con el lugar donde se dejan caer los objetos dependiendo de si el objeto se arrastraba desde la ventana del inventario, se soltaba mediante el menú contextual o el botón de Soltar, o se dejaba caer automáticamente (para cadáveres equipados).
+Corregido que la ventana de botín no se actualizara cuando se dejaban caer cadáveres a veces.
+Corregido que las ventanas de inventario y botín ubicadas en la parte inferior de la pantalla estuvieran en una ubicación diferente después de volver a cargar, si se redimensionaban a menos de la altura predeterminada.
+Corregido que se pudiera rasgar la ropa que requiere tijeras si se seleccionaba otra ropa que no requería tijeras.
+Corregido que los techos no mantuvieran al jugador seco si no había suficientes paredes para hacer una habitación.
+Corregida la creación de basura relacionada con la búsqueda de elementos de ropa.
+Corregidos los botones de Cancelar de la búsqueda y pesca que no hacían nada después de que finalizara la primera acción.
+Corregido el diseño de la búsqueda y la pesca con fuentes de texto de diferentes tamaños.
+
+[VERSION] 41.29
+
+[SECTION]NUEVO
+
+Implementada versión beta de ZOOM: visuales más nítidos y mejor rendimiento para sistemas de baja especificación.
+Se agregó un cursor para ayudar a seleccionar qué árbol talar.
+Se agregó una interfaz de gestión de hordas en modo de depuración.
+Agregadas opciones de sandbox "Probabilidad de eventos de historia de vehículos".
+
+[SECTION]BALANCE
+
+Eliminado el daño al conducir sobre árboles y arbustos pequeños.
+Reducida la desaceleración al conducir sobre árboles y arbustos pequeños. (Puede haber uno o dos tipos que hayamos pasado por alto).
+Los arbolitos ya no te hacen caer al correr.
+Se actualizaron las traducciones de la comunidad.
+Se redujo el brillo de la iluminación en los modelos de armas y sombreros caídos.
+
+[SECTION]CORRECCIONES
+
+Corregidas algunas rarezas en las Mac antiguas con los nuevos modelos (¡Equipo de Apple! ¿Nos reportan? ¿Ya estamos de vuelta?)
+Corregidos los problemas con los recortes que fallaban en las esquinas de las paredes NW.
+Corregidos problemas con el sistema de recortes que a veces fallaba por completo.
+Corregido error de lua al tomar una llave de un zombie muerto.
+Corregido que los zombies se actualicen después de ser eliminados del mundo.
+Corregido no poder atacar a los zombies boca abajo si hay un zombie parado cerca detrás de una puerta cerrada.
+Corregido que el contorno de apuntar a veces no apareciera.
+Corregido que la acción de parada de tiempo stop() se llamara si la acción se interrumpía durante waitToStart().
+Corregido el suelo del patio faltante en el restaurante Riverside.
+Corregida la detección de colisiones con árboles y arbustos.
+Corregidos algunos errores tipográficos (camiseta -> camiseta).
+Corregido exploit de experiencia de sastrería al quitar múltiples veces un parche.
+Corregido que la opción "Actualizaciones de zombies escalonadas" no se guardara.
+Corregida la creación de basura relacionada con la búsqueda de elementos de ropa.
+Corregidos los botones de Cancelar de la búsqueda y pesca que no hacían nada después de que finalizara la primera acción.
+Corregido diseño de búsqueda y pesca con fuentes de diferentes tamaños.
+Corregidos los azulejos de la esquina noroeste que no se recortaban.
+Corregida imagen indicadora de talar árboles descentrada.
+Corregida ISEquipWeaponAction que no se completaba inmediatamente si el arma ya estaba equipada.
+Corregido el hilo de renderizado que llamaba a AnimationPlayer.getRenderedAngle() en algunos lugares. Se agregó agrupamiento de objetos AnimationPlayer.
+Corregidos problemas del controlador en la IU de recolección y pesca.
+Corregidos problemas de guardado de vehículos al duplicar el tamaño del ByteBuffer utilizado para guardar vehículos de 64KB a 128KB.
+Corregido que los restos de zombie IsoZombieGiblets nunca se eliminaban del cuadro en el que se encontraban.
+Corregido que las cortinas cerradas no fueran visibles desde el exterior.
+Corregido que se pudiera hacer clic en las cortinas para abrir/cerrarlas desde demasiado lejos o estando fuera de los edificios a veces.
+Corregido que el cursor iso fuera visible al usar un controlador.
+Corregido que el jugador quedara atrapado en la animación de apuntar si el arma se rompía mientras atacaba.
+
+[VERSION] 41.30
+
+[SECTION]NUEVO
+
+Salsa Secreta Especial de Spiffo. CONTENIDO REDACTADO.
+
+[SECTION] Mejoras de Zoom:
+Se utilizaron los mismos niveles de zoom con las texturas no duplicadas que con las texturas duplicadas. Esto es principalmente para permitir un mayor acercamiento con las texturas no duplicadas.
+Correcciones en las costuras de los sprites de pisos no diamantados.
+Ajuste fino del relleno al 0.5% en Zoom <= 1 y 0 al alejarse.
+Limpieza de formadores de sprites.
+Se agregó la propiedad WallOverlay a algunos sprites de remolques para corregir las costuras (no completamente corregidas).
+Se agregó la propiedad is-floor a dos azulejos planos del techo del remolque para corregir las costuras e iluminación.
+Se corrigieron banderas faltantes en un par de azulejos de piso para corregir las costuras e iluminación.
+Se revisó el relleno de sprites Iso para reducir la superposición y minimizar las costuras.
+Se cambió la forma en que se selecciona el filtrado de texturas, para obtener una mejor estética en todos los niveles de zoom y minimizar los artefactos visuales mientras está en movimiento.
+Cuando se amplía todo el camino, se utiliza el filtro Nearest-neighbor para obtener un aspecto nítido y pixelado.
+Cuando se amplía menos del 100%, se utiliza el filtro Bilinear, para una apariencia más suave y sin artefactos visuales.
+Cuando se amplía más del 100%, se utiliza el filtro TriLinear, también conocido como Linear MipMap, para una apariencia más suave y menos parpadeo de píxeles.
+Se corrigieron artefactos de costura en los bordes de las baldosas de la orilla.
+
+[SECTION]Mejoras en los recortes:
+Las paredes hechas por el jugador ahora muestran paredes, marcos de ventanas, marcos de puertas en el norte y oeste cuando se construyen en Z>0.
+El temporizador ahora detiene los recortes y otros efectos de visibilidad/ocultamiento que parpadean.
+Las paredes del este desde el personaje en niveles Z=1 ahora funcionan correctamente.
+
+[SECTION]Animaciones pulidas al trabajar en vehículos:
+Corregido el ajuste de ángulo del personaje al abrir el capó.
+Reproduce una animación antes de que aparezca la ventana de mecánica (mientras se examina el vehículo).
+Reproduce animaciones al agregar/eliminar gas. Muestra el modelo de la lata de gas en la mano del jugador cuando se usa una.
+Reproduce animaciones al instalar/desinstalar piezas.
+Se aumentó el tiempo para instalar/desinstalar neumáticos.
+Asegura que el jugador esté mirando hacia el vehículo antes de romper una ventana.
+
+[SECTION]Mejoras en el sistema de temperatura
+Se cambiaron las temperaturas de las habitaciones para ser más tolerantes hasta que se introduzcan dispositivos de calefacción/refrigeración.
+Corregido error donde el calor corporal a veces evitaba que la ropa se mojara bajo la lluvia.
+Reinstalado el consumo de alimentos para combatir el frío, pero se redujo su impacto severamente.
+Se redujo el consumo de fatiga y fluidos, aunque los fluidos siguen siendo un factor importante al sobrecalentarse.
+Se cambió el impacto de la energía en la termorregulación para ser menos severo cuando la energía aún es alta pero empeora a medida que disminuye.
+Se cambió la recuperación del núcleo Celsius más rápida cuando la tendencia se mueve hacia el punto de ajuste.
+Se cambió la humedad corporal para que tenga un impacto ligeramente más fuerte en la ganancia/pérdida de calor.
+Se cambió el factor de peso de la capacidad en la producción de energía, más fuerte a medida que la capacidad se acerca al máximo, insignificante cuando es baja.
+Se reestructuraron y ajustaron algunas partes del termorregulador.
+Se eliminó el efecto del hambre del termorregulador a favor de un aumento en la ingesta calórica.
+
+[SECTION]Base de datos de vehículos/jugadores
+Los jugadores ahora se guardan por separado de los vehículos.
+Los jugadores se guardan en un archivo llamado players.db. Los vehículos aún se guardan en vehicles.db.
+La detención al ingresar en partes inexploradas del mapa (cuando se crean nuevos vehículos) debería estar solucionada.
+Se agregó un cursor para elegir cuadrados donde quitar la sangre.
+La construcción de múltiples etapas ahora muestra una tabla en la mano del jugador al construir.
+Se agregó verter agua con la regadera (para la agricultura, por ejemplo).
+Tomar combustible de la bomba de gasolina ahora usa una animación.
+Se agregaron paneles de depuración para el sistema de radio para monitorear todos los canales, transmisiones, scripts, etc., incluidos sus ajustes.
+Los zombies ahora no pueden morderte en el aire mientras escalas vallas/muros altos, pero pueden hacerte caer.
+Se agregó textura de costurero.
+La botella rota ahora es un arma punzante, ya no dañará puertas o árboles.
+Sincroniza el sonido y la acción de armar un rifle con la animación mejor.
+Se agregó una nota en el tooltip de un arma cuando requiere armar para cargar un cartucho.
+Permite que los cadáveres enfrenten ángulos arbitrarios en lugar de estar restringidos a uno de 8 ángulos diferentes.
+Se cambió la animación de "lavarse".
+Ahora es posible recuperar y reparar un arma utilizada en la creación de lanzas.
+Se aumentó la probabilidad de golpear con armas de largo alcance cuando los zombies están realmente cerca.
+Los ataques de zombis veloces ahora ralentizan al jugador.
+El botón B del controlador activa y desactiva el sprint.
+Se aumentó el tiempo para curar algunas heridas.
+Se agregó la capacidad de quitar la hierba y el efecto del viento que aparece en las grietas de las calles.
+Se agregó el aviso "Necesita ser apagado." al intentar recoger algo móvil que no se puede recoger cuando está en funcionamiento (BBQ).
+Se agregó DeviceData getEmitter para propósitos de modificación.
+
+[SECTION]BALANCE
+
+Se aumentó la aparición de cigarrillos en los zombies.
+Los zombies ahora pueden soltar encendedores, cerillas y relojes digitales.
+Se aumentó la tasa de aparición de diversos artículos relacionados con el trabajo del metal.
+Se aumentó la tasa de aparición de trampas para ratones y aerosoles para jardinería.
+Las cercas de malla se pueden desmontar, dando objetos de MetalBar y Wire.
+
+[SECTION]CORRECCIONES
+
+Se corrigió que los zombies veloces corrieran a través del jugador.
+Se corrigieron bloqueos en algunos sistemas Intel debido a que los include no utilizados en floorTile.frag no funcionaban bien.
+Se corrigió que la secadora de ropa se pudiera instalar en la tubería (se eliminó la propiedad waterPiped).
+Se corrigió una condición de carrera que provocaba una excepción al iniciar el juego.
+Se corrigió que la pistola apareciera sin un cargador en los desafíos de la última resistencia.
+Se corrigió lot_barn_03 que usaba una baldosa de tierra antigua (floors_exterior_natural) y tenía la parte plana de su techo en el nivel incorrecto.
+Se corrigió que la línea de pesca siempre se rompiera al atrapar algo.
+Se corrigió que la acción de forrajeo no se repitiera automáticamente si nunca se encontraba nada en esa área.
+Se corrigió qué animación se reproduce al tomar tierra/grava/arena con una Paleta.
+Se corrigió que el cuarto inferior derecho de la pantalla no se pintara de negro con tres jugadores en cooperativo.
+Se corrigió que la lanza rota permaneciera en la mano secundaria después de que se rompiera mientras se pescaba.
+Se corrigieron algunos mensajes de error "require xyz failed".
+Se corrigió la excepción relacionada con el agua al subir o bajar del agua.
+Se corrigió que los zombies rompieran y escalasen a través de las ventanas cubiertas con rejillas metálicas en el centro comercial.
+Se corrigió la iluminación en las salpicaduras de sangre en el suelo nuevamente.
+Se corrigió la animación del rastrillo (usada al limpiar sangre con una fregona) que solo afectaba a los huesos superiores del cuerpo y no se repetía.
+Se corrigió que la animación de forrajeo solo afectara a los huesos superiores del cuerpo.
+Se corrigió que el rasgo AxeMan no afectara la velocidad de animación al luchar o talar árboles.
+Se corrigió que los registros de sierra no diferieran los huesos inferiores.
+Se corrigieron los elementos agarrados (hacer clic derecho en el elemento -> agarrar) que no usaban ninguna animación.
+Se corrigió la excepción de lua cuando la ropa de un zombie era destruida por el ataque de un jugador.
+Se corrigió que los faros de los vehículos comenzaran demasiado lejos del vehículo.
+Se corrigió el texto superpuesto en la interfaz de inspección de prendas.
+Se corrigió que los jugadores y los zombies atravesaran puertas/paredes/ventanas/marcos de ventanas cuando trepaban sobre obstáculos.
+Se corrigió que los zombies quedaran atrapados dentro de un objeto adyacente al que trepaban (solo pueden trepar sobre un obstáculo).
+Se corrigió que los jugadores treparan por ventanas sobre obstáculos y luego sobre agua.
+Se corrigió que los obstáculos fueran sólidos cuando se colocaran adyacentes a marcos de ventanas de carpintería, a diferencia de los marcos de ventanas no carpinteros.
+Se corrigió que la piscina del hotel Riverside tuviera arena alrededor de los bordes.
+Se corrigieron las zonas ParkingStall faltantes en la celda 33,36.
+Se corrigieron algunas TownZone que no eran zona Nav en la celda 33,36.
+Se corrigió (nuevamente) que el jugador quedara atrapado apuntando después de que su arma se rompiera.
+Se corrigieron los tooltips de objetos personalizados (como el tooltip de la planta de granja) que se renderizaban docenas de veces cada cuadro.
+Se corrigió un poco de creación de basura relacionada con lambda en StateMachine.
+Se corrigió no poder 'limpiar' vendas/trapos sucios con agua contaminada.
+Se corrigió que el sándwich diera una cantidad extrema de aburrimiento cuando se usaba pan que aún estaba fresco pero se volvería rancio en menos de 1d 12h.
+Se corrigió que la ropa se volviera instantáneamente "ligeramente sucia" después de ser lavada.
+Se corrigió que algunas paredes y autos no te dieran un bono del 0% al esconderte detrás de ellos.
+Se corrigió el bug de ClimbThroughWindowState con los zombies.
+Se corrigió que las bombas molotov desaparecieran si se cancelaba el ataque.
+Se corrigió la excepción al trepar sobre una cerca con fuego cerca.
+Se corrigió que los jugadores se incendiaran cuando estaban dentro de un vehículo.
+Se corrigió no poder cargar un arma con un cargador si ya no hay una bala en la recámara.
+Se corrigió no poder disparar rifles repetidamente desde vehículos.
+Se corrigió el racking de pistola/revólver/escopeta (se agregó el evento rackBullet).
+Se corrigió que los cadáveres aleatorios siempre miraran en la misma dirección.
+Se corrigió que algunos cadáveres basados en la historia se solaparan con los muebles.
+Se corrigió que los pisos transparentes bloquearan la visión a otros niveles.
+Se corrigieron problemas de renderización al cambiar los edificios del patio de trenes de Muldraugh para que los niveles superiores se consideren habitaciones (celdas 38,32 38,33 y 39,33).
+Se corrigió no poder interactuar con puertas y ventanas detrás del jugador usando los botones A y B del controlador, como ya se podía hacer con la tecla E.
+Se corrigió el texto de depuración superpuesto en el panel de salud.
+Se corrigieron las baldosas de tierra incorrectas en el campo de fútbol de Muldraugh en la celda 35,33.
+Se corrigió que las tablas estáticas de VehicleType no se recrearan después de volver a cargar archivos lua.
+Se corrigió la generación de frecuencias de emisión automatizada que no se podía ajustar manualmente.
+Se corrigió que los cadáveres o los zombies aparecieran cuando deberían estar desactivados (en historias de vehículos o casas).
+Se corrigió que el jugador terminara dentro de un objeto sólido después de caer hacia atrás mientras trepaba por una ventana con un zombie al otro lado.
+Se corrigió el uso codificado de "Zombies/Male Pain" en lugar de usar un sonido definido por el script.
+Se crean datos de mipmap de textura en los hilos de carga de activos en lugar de en el hilo de renderizado.
+Se intentó reducir el largo retraso después de hacer clic en "Haga clic para continuar" la primera vez.
+
+[VERSION] 41.31
+
+[SECTION] ANIMACIONES
+
+Ajustadas las transiciones para el desplazamiento lateral y algunos estados de combate cuerpo a cuerpo (solución para las animaciones de golpeo que se veían raras, como con el palo de amasar)
+
+[SECTION]MODDING
+Agregado el pase de texto del dispositivo de radio que pasa el padre (IsoObject, Item, VehiclePart) para propósitos de modificación
+
+[SECTION] ARREGLOS
+
+Aumentado el daño hecho a las cercas.
+Arreglado que los zombies te empujen cuando están muertos.
+Arreglado que los zombies te empujen después de golpearlos.
+Arreglado que los zombies golpeen a través de las paredes.
+Arreglado los fotogramas donde el zombie era considerado no "en el piso" durante un ataque de lunge a una cerca o ventana.
+Arreglado que los zombies puedan atacarte en un nivel Z diferente al hacer un lunge a una ventana/cerca.
+Arreglado la falta de zombies con trajes de prisionero en la prisión.
+Arreglado (nuevamente) los cadáveres de los bloobs.
+Arreglado que la carpintería no consuma materiales.
+Arreglado que las cercas de carpintería de madera corta no sean destruibles por vehículos y zombies.
+Arreglado que las paredes de las celdas bloqueen la visión.
+Arreglado el null pointer bodydamage catchacolddelta.
+Arreglado el error de multihilo con la representación de depuración de física.
+Arreglado que los edificios tóxicos lancen excepciones cuando los zombies están dentro.
+Arreglado que los vehículos funcionen dentro de los edificios volviéndolos tóxicos hasta que se pulan nuevamente.
+
+--------------------------------------------------Faltan traducciones----------------------------------------------------
+
+[VERSION]41.74 - 41.77
+[SECTION]41.77.7 Hotfix del 17 de octubre:
+
+Se reconstruyeron las bibliotecas znet.
+Ahora se muestra el número de revisión menor en el menú principal en lugar de solo dentro de la consola.
+Se corrigió quedarse atascado en la pantalla de conexión o una pantalla negra al intentar conectarse a un servidor cooperativo.
+Se corrigieron mensajes de registro y NPE durante el procesamiento del paquete RakNet ya conectado.
+Se corrigieron casos en los que los clientes no podían conectarse a un servidor donde los registros mostraban que el cliente ya está conectado. El cliente usará 127.0.0.1 para conectarse si es un anfitrión cooperativo.
+Se corrigieron las conexiones de los anfitriones desde clientes remotos.
+El cliente guardará los registros del servidor cooperativo en el archivo logs.zip antes y después de cada inicio.
+
+[SECTION]Hotfix del 7 de octubre:
+Se reconstruyeron las bibliotecas znet.
+Se corrigió el comando /banid.
+
+[SECTION]MP
+
+Mejora en la conexión del cliente.
+Importante para los proveedores de servidores: los servidores ahora tienen dos puertos a los que los clientes pueden conectarse.
+El puerto del juego (UDP 16261 por defecto) se usa para manejar consultas de Steam. El puerto adicional (UDP 16262 por defecto) se usa para manejar la conexión directa. Estos puertos se pueden configurar a través de las opciones del servidor.
+Los clientes primero intentarán usar una conexión directa. Si la conexión directa falla, los clientes intentarán conectarse a través de Steam.
+La versión no Steam funciona como de costumbre.
+Las reglas UPnP se cambiaron en consecuencia (UPnP se usa en casos para evitar el reenvío manual de puertos).
+El cliente mostrará el mensaje de advertencia "ADVERTENCIA: EL SERVIDOR TIENE EL PUERTO %1 CERRADO. EL RENDIMIENTO PUEDE VERSE SEVERAMENTE AFECTADO" si el cliente no puede conectarse a través de una conexión directa.
+Se reconstruyeron las bibliotecas ZNet para Windows, Linux y Mac.
+Se mejoraron los registros de ZNet, Conexión, y Kick.
+Se mejoró el comportamiento del Anti-Cheat Tipo5 y Tipo21-24 para reducir falsos positivos.
+Se dividió el paquete ConnectionDetails en varios paquetes más pequeños con uno de los valores de enum State de ConnectionDetailsPacket indicando qué datos se solicitan.
+Se mejoró el algoritmo para la transmisión de archivos grandes durante el juego.
+La pantalla de carga ahora muestra el estado de descarga de archivos grandes al conectarse a un servidor.
+Se ampliaron los registros de comprobación de integridad para depurar diferencias CRC.
+Se aumentó el retraso de expulsión por diferencias CRC.
+Se añadieron registros adicionales.
+Se corrigió que los paquetes ObjectModData no se enviaran mientras el servidor estuviera en el estado FastForward.
+Se corrigió un error en el diccionario mundial cuando un objeto en un módulo diferente pero con un nombre similar a un objeto del juego básico fue eliminado.
+Se corrigió que una nueva barba de afeitado se añadiera a los jugadores remotos después de cada cambio de apariencia, lo que resultaba en errores receivePlayerZombieDescriptors.
+Se corrigieron expulsiones después de desactivar VOIP.
+Se corrigió la conexión al anfitrión después de la desconexión de un servidor dedicado.
+Se corrigió el intento de conexión infinita a un servidor no Steam cuando no está en funcionamiento.
+Se corrigió que el cliente mostrara "Desconectado" en lugar de "Nombre de usuario o contraseña incorrectos".
+Se corrigió que los jugadores pudieran cambiar su contraseña guardada para una cuenta ya creada en algunos casos.
+Se corrigió la pantalla negra en el Anti-Cheat Tipo21 en la etapa de conexión cuando la comprobación anti-trampa Tipo21 está deshabilitada.
+Se corrigió que el modelo de personaje siempre usara media/textures/Body/Masks en lugar de la carpeta UnderlayMasks de un artículo de ropa.
+Se corrigieron problemas de pantalla negra con ciertas constelaciones de mods.
+Se corrigió la posición de la barra de progreso de la acción temporal que no se actualizaba durante las acciones sin una duración fija.
+Se corrigió la velocidad de animación de la barra de progreso de la acción temporal en diferentes velocidades de cuadros.
+
+[SECTION]NUEVO
+
+Se añadió una barra de progreso en bucle para acciones temporales que no tienen un final definido. Esto es principalmente una "solución" provisional para entrar en autos, para visualizar que hay una acción en curso sin terminar hasta que podamos tener puertas visualmente abiertas, etc.
+Específicamente añadido para los escenarios donde los jugadores informaron haber sido mordidos a través de la puerta del auto después de haber entrado en un automóvil e interrumpir la acción de "entrar en el auto" antes de que pudiera terminar (por ejemplo, abriendo el mapa, etc.), es decir, antes de que la puerta estuviera "cerrada".
+Esta barra se extiende a otras acciones "infinitas" como Caminar hacia.
+
+[SECTION]MODELOS
+
+Se añadieron nuevas ubicaciones corporales: Jacket_Bulky, JacketHat_Bulky, TorsoExtraVest, y JacketSuit.
+Se asignaron nuevas ubicaciones corporales a artículos de ropa existentes para evitar el solapamiento.
+Se ajustaron y añadieron muchas máscaras de ropa para evitar el solapamiento entre sí.
+Se ajustaron varios modelos de ropa y ponderación de huesos para mejorar el solapamiento.
+Se eliminó el modelo de camisa de bolos de las definiciones de camisa de bolos y se convirtió en una textura de Camisa de Bolos. El modelo se dejó en los archivos en caso de que los mods lo usen.
+Se mejoró la máscara corporal base para ayudar con el solapamiento.
+Se volvieron a exportar las mochilas ALICE ya que faltaban algunas correas.
+
+[VERSION]41.78
+[SECTION]NUEVO
+Agregado un aviso para los nuevos Términos de Servicio porque ahora somos un juego grande y tenemos que encajar con los otros chicos más grandes. 
+[NODOT]<BR> 
+Agregada opción de sandbox para deshabilitar la Reanimación Falsa de Muertos. Se desactivan los muertos falsos en MP por defecto.
+Agregado más control sobre el comportamiento de los muertos falsos a las opciones de sandbox; la posibilidad de que los zombies "muertos" tengan una chance de volver a la vida falsamente es una opción que está desactivada por defecto.
+Agregada opción de sandbox que permite deshabilitar o limitar la generación de Larvas de Cadáveres al inventario de cadáveres.
+Agregada opción de sandbox que permite deshabilitar envenenar alimentos, o deshabilitar el envenenamiento de alimentos con lavandina.
+Agregada opción de sandbox para desactivar el Tooltip/Advertencia de Agua Contaminada para juego hardcore.
+Agregada opción de sandbox para habilitar/deshabilitar multiplicadores de XP que afectan habilidades pasivas, lo cual está desactivado por defecto.
+Agregada opción de sandbox que evita que los vehículos de sobrevivientes aparezcan.
+Agregada opción de sandbox "Vida Útil de la Lámpara". Esto no afecta a las lámparas de los vehículos, solo a las lámparas de los dispositivos de iluminación.
+[NODOT]<BR> 
+Agregadas opciones de "Aleatorización" a las opciones de sandbox de Zombies para Memoria, Visión y Audición.
+Agregados ajustes de rareza de botín "Increíblemente Raro" y "Ninguno", así como una opción "Super Bajo" para el contenido de las bombas de combustible.
+[NODOT]<BR> 
+Los elementos de historias de mesa/historias aleatorias/etc seguirán apareciendo cuando la rareza del botín esté establecida en ninguno.
+[NODOT]<BR> 
+Renombrado el ítem "Peso" a "Peso en la UI y el menú contextual.
+[NODOT]<BR> 
+Agregada una Opción de Accesibilidad que hace que el personaje del jugador camine automáticamente hacia un contenedor al hacer clic dentro de un radio corto de 3 baldosas.
+Agregada la capacidad de establecer colores de resaltado personalizados "Bueno" y "Malo" en el menú de Opciones de Accesibilidad. Esto se aplica a cosas como rasgos, tooltips y el contorno de apuntado.
+Agregada opción para vincular "Caminar Hasta" a una tecla en lugar de tener que pasar por el menú de RMB.
+Agregado resaltado a las cajas seleccionadas para que sea más fácil distinguir cuál caja está seleccionada. Esto se puede habilitar o deshabilitar en las Opciones del juego.
+Agregada una entrada de menú contextual que habilita/deshabilita el Auto-Beber.
+Las baldosas que se están desmontando ahora se resaltarán en el "color malo", siendo el rojo el predeterminado.
+[NODOT]<BR> 
+Las resoluciones superiores a 1440p ajustarán sus niveles de zoom para permitir un zoom más cercano, acercándolo más a las resoluciones más bajas.
+[NODOT]<BR> 
+Deshabilitadas algunas Casas Seguras de Supervivientes Aleatorizadas en instancias donde un edificio tiene más de 10 habitaciones, o es un lugar de aparición. El límite es de 10 para algunas y 20 para otras Casas Seguras de Supervivientes Aleatorizadas.
+[NODOT]<INDENT:40> Esto también significa que la historia del Papel Higiénico ahora está deshabilitada en edificios que tienen más de 10 habitaciones o son lugares de aparición, lo que probablemente reducirá la cantidad de publicaciones en Reddit al respecto en un 50%.
+Agregada una comprobación para evitar que ocurran cualquiera de las historias de edificios quemados aleatorizados si el edificio es un lugar de aparición.
+[NODOT]<BR> 
+Cambiado ISCloseVehicleDoor para reproducir el sonido de cierre de la puerta cuando se completa la acción en lugar de al principio. Esto es para proporcionar una mejor retroalimentación para los jugadores en casos en los que hayan cancelado inadvertidamente esta acción.
+[NODOT]<BR> 
+Agregada etiqueta "TieneMetal" para ítems. Esta etiqueta se agregó a ítems de comida y agua en recipientes de metal, lo que ahora provocará que los microondas se incendien al ser usados.
+[NODOT]<BR> 
+Ajustada la interfaz de mecánica para que tanto la Carga de Batería como la Condición estén incluidas en la entrada de Batería en la lista de partes.
+Modificada la interfaz de mecánica de vehículos para destacar prominentemente el % de un tanque de gasolina completo que tiene, además de la carga de la batería.
+[NODOT]<BR> 
+Agregadas algunas opciones de ropa existente a la creación de personajes.
+Agregada la capacidad de destruir solo una pared al seleccionar paredes de esquina.
+Reemplazado el modelo estático del mundo del balde con íconos y texturas de metal y no de plástico, ya que los baldes ahora son de metal y no de plástico.
+Actualizados los scripts de BucketEmpty y BucketWaterFull con tooltips y IsCookable para reflejar que ahora son de metal y no de plástico.
+Cambiado el ícono del Riego con Agua para que coincida con el Agua Vacía y los modelos de Riego.
+Agregado un tooltip obsoleto para alimentos perecederos para mostrar, cuando corresponda, que dicho alimento no está ni fresco ni podrido.
+Agregado tooltip a Martillos de Club y Mallets explicando que no son adecuados para clavar clavos.
+El modelo Flatpack se aplica a los elementos móviles que usan el ícono Flatpack.
+Más alimentos ahora pueden ser agregados a tacos y burritos.
+Ahora el Pimiento puede ser agregado a Guisos.
+[NODOT]<BR> 
+Agregada una comprobación para que los huevos cocidos no puedan ser usados para recetas inapropiadas no evolucionadas.
+Eliminado el requisito de agua caliente para hacer un tazón de avena.
+Cambiado el Tipo de Comida Violeta a NoEspecífico.
+[NODOT]<BR> 
+Las baldosas de basura (ítems móviles) y las Bolsas de Plástico ahora pueden ser usadas como yesca y combustible para incendios.
+Cambiadas las recetas de Escopetas recortadas para usar solo la sierra de arco, y no la sierra de jardín; una sierra de madera no podría cortar el barril de metal de una escopeta.
+Agregado el Cuchillo de Carnicero a la receta de Picar Cebollas. Eliminado de la receta de Calabaza de Halloween.
+[NODOT]<BR> 
+Cambiado el script de Cigarrillos para priorizar el uso de Fósforos antes que un Encendedor si ambos están en el mismo inventario.
+Agregadas nuevas bolsas de doctor y bolsa de lona militar.
+Renombrado el rasgo "Hemofóbico" a "Miedo a la Sangre".
+La tasa de probabilidad de aparición de vehículos ahora puede ser un valor flotante en lugar de solo un entero.
+Agregada una comprobación para evitar que los ítems que "pesen" más de 50 unidades sean colocados en asientos de vehículos.
+[NODOT]<INDENT:40> Este es un problema continuo con bolsas/contenedores que están modificados por encima de la capacidad, que quedan atascados una vez colocados en asientos de vehículos cuando la bolsa + contenido tiene un Peso de >50.
+[NODOT]<BR> 
+Cambiadas las cadenas de traducción para hacer que los nombres de las botellas sean más consistentes.
+Cambiado IGUI_HouseKey de "Llave de Casa" a "Llave" para evitar problemas con llaves no residenciales.
+[NODOT]<BR> 
+Eliminado el tooltip de información numérica proporcionado al seleccionar comer todo/mitad/cuarto de un alimento.
+Comentadas las definiciones de herramientas en ClothingRecipesDefinitions ya que actualmente no funcionan y no sirven para otro propósito que confundir a los modders.
+[NODOT]<BR> 
+Comentado el WoodenLance en las listas de distribución de armas de casas seguras; ese ítem es redundante frente a SpearCrafted, y además no funciona con las recetas de lanza. SpearCrafted ya aparece con armas de casa segura.
+Reemplazado AmmoStraps en la lista de distribución de armaduras de casas seguras con AmmoStraps_Bullets y AmmoStraps_Shells.
+Cambiada la cadena de traducción del nombre de visualización para los ítems de AmmoStraps usables para el pecho a Bandolera debido a la confusión consistente con el accesorio de arma que también se llama Ammo Straps.
+Cambiada la cadena de traducción del nombre de visualización para los cargadores de armas de fuego para usar el arma de fuego para la que es, y no el calibre, como prefijo. Resuelve tener dos Cargadores .308, para el MSR788 y el M14, y también así es como se llaman en la vida real.
+Agregado un tooltip a los cargadores de armas de fuego que muestra el tipo de munición que acepta.
+[NODOT]<BR> 
+Agregados modelos faltantes para Candy Corn, Rodajas de Frutas Cristalizadas, Salsa Picante, Vasos de Fuente, JuJubes, Ortigas, Dumplings de Camarones, Huevos Escalfados, Huevos Revueltos, Choclo Empaquetado, Jengibre en Escabeche, Galletas de Azúcar, Sushi de Pescado, Receptores de Radio, Transmisores de Radio, Gomitas, Gusanos de Goma y Kits de Tienda.
+[NODOT]<BR> 
+
+[SECTION]MULTIJUGADOR
+
+Agregada opción de servidor "KnockedDownAllowed" para habilitar/deshabilitar el derribo PVP.
+[NODOT]<INDENT:40> Este es un cambio provisional para dar a los servidores una opción para hacer que el combate PVP sea menos frustrante antes de que podamos abordar el combate PVP de manera más directa en el futuro.  
+[NODOT]<BR> 
+Ajustado el Antitrampas Tipo 3 y 5 para reducir los falsos positivos.
+Agregada la autocompletación de apodos de jugadores al presionar TAB mientras se escribe en el Cuadro de Chat.
+Agregado el comando RCON "checkModsNeedUpdate" para verificar si hay mods que necesiten actualizarse.
+Permitir que otros niveles de permiso no administrativos eliminen ítems en inventarios/contenedores.
+[NODOT]<BR> 
+Agregado registro de checksum para servidores MP, habilitado por defecto por ahora.
+Se extendieron los registros de NetChecksum:
+[NODOT]<INDENT:60>El cliente registra los registros en checksum.txt.
+[NODOT]<INDENT:60>El cliente envía los registros al servidor.
+[NODOT]<INDENT:60>El servidor registra los registros en checksum.txt.
+[NODOT]<INDENT:60>El servidor registra los registros del cliente en checksum-<id>.txt.
+[NODOT]<BR> 
+Los clientes de multijugador ahora volverán a intentar la solicitud GettingServerInfo 3 veces.
+El registro de usuario del visor de DB ahora tendrá el campo de cantidad aumentado para recuentos repetidos de actividad sospechosa.
+[NODOT]<BR> 
+Al ordenar las rutas relativas de scripts y archivos Lua para determinar el orden de carga, las rutas relativas primero se convierten en minúsculas. Esto es para corregir las diferencias de plataforma que rompen los checksums en multijugador. También soluciona el problema donde el mismo archivo podría cargarse más de una vez si los mods usan diferentes mayúsculas y minúsculas para el mismo archivo o carpeta.
+[NODOT]<BR> 
+Corregido el comando "susurrar" del multijugador que corrompía el entorno Lua debido a la multihilo.
+Corregido el problema de no poder reclamar una casa segura a menos que se esté en la planta baja.
+Corregido el no verificar los pisos superiores para otros jugadores o zombies al reclamar una casa segura.
+Corregida una excepción en el servidor cuando la comida se pudre y se convierte en un nuevo ítem en un contenedor que ya no está en el mundo.
+Corregido el nuevo vello facial que se agregaba a los jugadores remotos después de cada cambio de apariencia.
+Corregido que las anotaciones de texto no aparecieran en mapas anotados en multijugador.
+Corregida la sincronización de Resistencia en la Herramienta de Salud del Administrador.
+Corregido un error que no mostraba los mods en la lista de mods de un servidor en el menú ESC.
+Corregido que los administradores no pudieran quitar capós de autos mientras estaban dentro del vehículo.
+Corregido que los jugadores no pudieran interactuar con Radios que ellos mismos colocaron.
+Corregido que el dueño de una casa segura siempre reapareciera en su casa segura cuando la opción para hacerlo no estaba marcada.
+
+[SECTION]BALANCE
+
+Modificado los valores críticos de M16 y M14 para que sean más consistentes con otros rifles.
+[NODOT]<INDENT:40> M16: Probabilidad crítica cambiada de 30 a 25.
+[NODOT]<INDENT:60>Se añadió Multiplicador de Daño Crítico 10
+[NODOT]<INDENT:60>Se añadió Modificador de Crítico por Perk de Apuntado 12
+[NODOT]<INDENT:40> M14: Probabilidad crítica cambiada de 0 a 30.
+[NODOT]<INDENT:60>Se añadió Multiplicador de Daño Crítico 10
+[NODOT]<INDENT:60>Modificador de Crítico por Perk de Apuntado 15
+Desactivada la desaceleración acumulativa hasta el próximo disparo al disparar el M16 en modo automático. Disparar el M16 en modo automático reducirá acumulativamente la probabilidad de un crítico con cada disparo adicional. Esto está destinado a representar la pérdida de precisión debido al retroceso.
+Se establecieron algunos rasgos como mutuamente excluyentes para eliminar exploits o combinaciones ilógicas.
+[NODOT]<BR> 
+El puenteo en caliente de un vehículo tendrá una baja probabilidad de causar una alarma de auto. La probabilidad se reduce aún más para niveles de habilidad electrónica más altos.
+Los zombies que empujan contra un vehículo estacionario previamente no ingresado tienen la posibilidad de activar una alarma.
+Eliminada la comprobación de RNG no deseada que hacía sonar las alarmas de los vehículos solo el 20% del tiempo.
+Corregido que los capós de los autos no pudieran activar las alarmas de los vehículos.
+[NODOT]<BR> 
+Desactivada la capacidad de realizar ataques cuerpo a cuerpo mientras se está dentro de un vehículo con la ventana bajada.
+[NODOT]<BR> 
+Se ha aleatorizado el daño por caída que reciben los zombies. Esta propagación aleatoria promediará el daño anterior a la aleatorización; esto tendrá un impacto menor (jejeje) en el daño que sufren los zombies que caen, pero ligeramente más de ellos podrán ser asesinados por esto que antes.
+Se hizo que las lesiones en la ingle por zombies que no son reptadores sean menos comunes, y que los reptadores también puedan infligir lesiones en la ingle poco comunes.
+[NODOT]<BR> 
+Aumentado el rendimiento de las piezas de metal al desguazar vehículos destrozados en un 33%.
+Añadido un nuevo contenedor procedural, "CratePropane", a garajes y cobertizos.
+Incrementada la tasa de aparición de Tanques de Propano en las distribuciones.
+Aumentada la tasa de aparición de Hilo y añadida la posibilidad de que los Kits de Costura aparezcan en guanteras.
+[NODOT]<BR> 
+La capacidad del remolque ahora disminuye ligeramente cuando está dañado, ya que no tenía sentido repararlos antes.
+Cambiada la capacidad del Bolso de Bola de Bolos de 2 a 8.
+Aumentado el número de usos de Yeso a 10, igual que la Pintura.
+Permitido el uso de bolsas de plástico y dinero como material de encendido.
+[NODOT]<BR> 
+Ajustada la duración de la animación estacionaria de Golpear con Pistola, ahora tiene la misma duración que la animación de empujar.
+Ajustadas las capacidades de los estuches de pistola y revólver de 7 a 4.
+Ajustado el Peso de la vara resistente a 1 para ser más consistente con otros ítems.
+Ajustado el Peso de los extintores de incendios a 2, para ser consistente con otros ítems.
+Disminuido el Peso de los Walkie-Talkies.
+Ajustado el Peso del ítem Rama de Árbol para que coincida con el de una lanza fabricada, a 1.7 de 1;
+[NODOT]<INDENT:40>La discrepancia de peso ha sido señalada repetidamente, y esto también ayuda a hacer el peso de los ítems más consistente.
+Ajustada la cantidad de combustible que aparece en las bombas de combustible en Bajo y Muy Bajo.
+[NODOT]<BR> 
+Actualizado el valor nutricional de la Leche Evaporada enlatada. Calorías 472; Carbohidratos, Lípidos y Proteínas en 23.6.
+Cambiados los días hasta podrirse para los Bagels de 2 a 6.
+Se dio al Stir Fry y al asado un valor de hambre predeterminado de 10. Esto fue reportado previamente como un error cuando los jugadores generaban el ítem en lugar de hacerlo a través de la receta evolucionada.
+[NODOT]<BR> 
+Los gusanos son ligeramente más venenosos.
+Menos gusanos aparecen, especialmente en primavera y otoño (los gusanos no aparecen durante el invierno).
+Los gusanos ahora son un ítem predeterminado en las listas de eliminación de ítems del mundo. Se añadió un comentario a las listas de eliminación de ítems del mundo explicando que Base.Maggots debe permanecer en la lista debido a los gusanos de cadáver.
+Se agregó una salvaguardia adicional para evitar errores al usar mods que eliminan por completo a los gusanos.
+
+[SECTION]DEPURACIÓN / MODIFICACIÓN
+
+Se agregó una barra de búsqueda al panel de trucos LootZed.
+Se agregaron distribuciones de vehículos a LootZed.
+Se mejoró la comprobación de inventario en el panel de estadísticas de comprobación.
+[NODOT]<BR> 
+Hacer clic derecho en una bomba de combustible en modo de depuración mostrará la cantidad de combustible en la bomba en el menú contextual del clic derecho.
+[NODOT]<BR> 
+Se agregó el registro de lesiones de jugadores causadas por zombies a la consola cuando se está en modo de depuración.
+Se agregó la función de comprobación isStartValid para BaseTimedAction. Permite verificar si una acción es válida antes de que la acción comience.
+Se agregó la capacidad de guardar ModData de IsoGameCharacter a IsoDeadBody y de IsoDeadBody a IsoZombie.
+Se agregó el evento "OnPlayerGetDamage".
+Se agregó el evento "OnWeaponHitThumpable" (Argumentos: personaje, arma, objeto).
+Se agregó un desencadenante para el evento OnFillContainer cuando los contenedores de partes del vehículo están llenos.
+Se agregó la etiqueta "CarBattery" que se puede usar con baterías de auto de mod para que puedan cargarse con el cargador de baterías de auto vainilla.
+Se agregó el evento "OnThrowableExplode", que transmite IsoTrap e IsoSquare cuando uno explota.
+Se agregó una opción de alternancia en el menú contextual de depuración de vehículos que mostrará si la alarma de un vehículo está activada o desactivada.
+Se cambió el truco de Movimiento Rápido en depuración. Ahora los jugadores pueden levitar en diferentes niveles de altura a través de las teclas PageUP/PageDown, y moverse con las Teclas de Flecha en los diferentes niveles de altura.
+Se hizo que ImageScale, SeatOffsetY y SeatOffsetX fueran globales y no locales en ISVehicleSeatUI.
+Los mensajes de consola "Falta traducción", "ignorando tipo de ítem ItemPicker no válido" y "DISTRIBUCIÓN DE CONTENEDOR DE VEHÍCULO FALTANTE" ahora solo aparecerán cuando se use el modo de depuración.
+Se expuso la clase MediaData.MediaLineData.
+[NODOT]<BR> 
+Cuando se habilita la opción de depuración Sound.WorldSound.Render, los sonidos del mundo se representan de acuerdo con la opción de sandbox Hearing.
+[NODOT]<INDENT:40> Para Hearing=Random (donde cada zombie puede tener un radio diferente) los sonidos se representan utilizando el radio Hearing=Normal.
+[NODOT]<INDENT:40> Esto no significa que su radio de audición no esté randomizado, solo significa que el radio de sonido del mundo no se puede representar por zombie en modo de depuración.
+[NODOT]<INDENT:40> Para Hearing=Pinpoint/Normal/Poor, el radio de audición del meta-zombie se maneja correctamente.
+Los errores FileDifferent, FileNotOnServer y FileNotOnClient ahora mostrarán las rutas absolutas de ambos archivos. Esto debería hacer más claro que un mod podría haber estado usando la capitalización incorrecta para una carpeta.
+[NODOT]<BR> 
+Corregido que los personajes en modo dios aún cambiaban el peso corporal.
+Corregidas las instancias de que el Menú de Trucos no funcionara después de que un jugador muriera.
+Corregido que eliminar cuerpos a través del administrador de hordas no funcionara en un jugador.
+Corregido que quedara atrapado en un vehículo después de intentar desinstalar/instalar una parte del automóvil a través del Truco de Mecánica, cuando un personaje estaba dentro del vehículo.
+Corregido error con el panel de salud: Sanar completamente una parte del cuerpo ahora también elimina su fatiga muscular.
+Corregido que los paquetes de texturas de mods se cargaran antes de que Core.TileScale se estableciera en función de la opción de texturas de doble tamaño. Esto resultaría en la carga de paquetes de texturas 2x en lugar de paquetes de texturas 1x.
+[NODOT]<BR> 
+Corregidos problemas con el Selector de Azulejos:
+[NODOT]<INDENT:40> Corregido no poder bloquear Puertas colocadas a través del Selector de Azulejos.
+[NODOT]<INDENT:40> Corregidos problemas con Azulejos de Árbol.
+[NODOT]<INDENT:40> Corregidos azulejos electrónicos (TV, radio, generadores, etc.).
+[NODOT]<INDENT:40> Corregidas Puertas de Garaje.
+[NODOT]<INDENT:40> Corregidos azulejos de Farolas.
+[NODOT]<INDENT:40> Corregidos problemas de Barra de Búsqueda.
+[NODOT]<INDENT:40> Corregidos Interruptores de Luz.
+[NODOT]<INDENT:40> Corregido que no se mostraran todos los azulejos.
+[NODOT]<INDENT:40> Corregidos objetos de Chimenea.
+[NODOT]<INDENT:40> Corregidos Pozos y Luces.
+
+[SECTION]CORRECCIONES
+
+Corregido que solo se pudiera agregar jarabe de arce a "PancakesRecipe" y no a "PancakesCraft" o "Pancakes".
+Corregido que ya no se pueda hacer 2 o 4 tazones de arroz o pasta con una cacerola.
+Corregido que el lápiz labial no se pudiera aplicar cuando el jugador tenía maquillaje de base en el inventario.
+Corregido que el maquillaje no se pudiera aplicar estando en un automóvil.
+Correcciones y cambios en las categorías de objetos.
+Corregido que destruir una pared con un interruptor de luz no destruía también el interruptor de luz.
+Corregido que hacer 2/4 tazones desde una cacerola devolvía una olla.
+Corregido que poner un sombrero en un mohicano reiniciaba el temporizador de crecimiento del cabello.
+Corregido que no se pudiera hacer un cóctel molotov con una botella de cerveza vacía.
+Corregido que construir/desmontar repetidamente algunos objetos de carpintería aumentaba el número de tablones a veces.
+Corregido el comportamiento de la pared de bolsas de arena/grava cuando se construye en un ángulo.
+Corregido que la parte seleccionada de una prenda en la interfaz "Inspeccionar" fuera demasiado tenue.
+Corregido que las camisas y otros artículos de ropa se eliminaban automáticamente del mundo.
+Corregido un error de receta de Muffin adicional innecesario. Se unieron las dos recetas de Muffin existentes en una sola.
+Corregido que se pudiera hacer masa para pastel con ingredientes podridos por debajo del nivel 7.
+Corregido que los gusanos de la harina fueran ligeramente más venenosos.
+Corregido que hubiera menos gusanos de la harina, especialmente en primavera y otoño (los gusanos de la harina no aparecen durante el invierno).
+Los gusanos de la harina son ahora un elemento predeterminado en las listas de eliminación de elementos del mundo. Se agregó un comentario a las listas de eliminación de elementos del mundo explicando que Base.Maggots debe permanecer en la lista debido a los gusanos de la harina de los cadáveres.
+Salvaguarda adicional para evitar errores al usar mods que eliminen completamente los gusanos de la harina.
+
+[VERSION]41.78.11 Hotfix
+
+Reequilibrado el uso de la Antorcha de Propano para los scripts de Reparación para adaptarse al cambio de capacidad; todos reducidos a 2.
+Se agregó el parámetro "AllowRottenItem:true" a las recetas para vaciar Sartenes; Sartenes para Asar; y Bandejas de Horno. Esto permitirá a los jugadores recuperar dichas sartenes cuando dejen que los Revueltos y Tortillas se pudran.
+Recetas como la del Spray Antimoho y Vaciar Sacos de productos ahora tienen el campo "AllowRottenItem:true", lo que permite usar objetos podridos en esa receta.
+Corregida la receta para hacer Cura Antimoho para que permita tanto Leche normal como enlatada; ya que los jugadores no podían hacer esta cura después de que toda la Leche normal se hubiera echado a perder.
+Corregido el no poder usar Leche Podrida para hacer la Cura de Spray Antimoho.
+
+Se han comentado las recetas "Hacer Olla de Sopa"; son obsoletas dado el sistema de recetas evolucionado que maneja este asunto de manera más eficiente.
+Corregido el no poder usar Sopa enlatada para hacer sopa evolucionada.
+Se cambió el nombre de "Sopa en Lata" a "Sopa de Verduras en Lata".
+Nota: Para hacer Ollas de Sopa con Latas Abiertas de Sopa ahora debes agregarlas a una Olla de Agua, como una sopa de receta evolucionada. Esto corrige el exploit de Super Sopa y permitirá a los jugadores agregar ingredientes adicionales a la sopa. La otra forma de hacer Ollas de Sopa era un método obsoleto y en muchos aspectos incompatible desde antes del sistema de recetas evolucionadas.
+
+Se actualizó la receta de Bandeja Limpia para que funcione con bandejas de Masa de Galletas, y también para que funcione con ingredientes podridos y cocidos, para que los jugadores siempre puedan recuperar una bandeja de bandejas podridas de comida.
+
+Varios ajustes a las máscaras de ropa.
+Se añadió un SetMelee Delay faltante en la animación de Pistol Whip.
+Corregidas las máscaras de Sudadera con Capucha y Chaleco para que funcionen correctamente con la malla base.
+Corregido que JokeKnife, JokeArrow, Orejas de Conejo, Orejas Peludas, Astas y Antenas de Estrella de Dios funcionen con todos los peinados.
+
+Reducida la velocidad de temblor de estado de ánimo y corazón a la mitad.
+Corregido un problema con forageSystem.lua que no tenía en cuenta la nueva configuración de rareza de botín.
+Corregido que el veterano tuviera algunas opciones de selección de ropa duplicadas.
+Corregida la carretera del mapa del juego que se curvaba en la celda 35,31.
+Corregido el enunciado de print() de JoyPadSetup.lua que resultaba en mensajes innecesarios en el registro de la consola.
+Corregidos los archivos fuente que no se cargaban en el depurador de Lua en Linux.
+Corregidos los archivos Lua de mods que no se cargaban en el depurador de Lua.
+Corregido el poder purificar Regaderas en un Horno.
+Corregido el poder convertir Huevos Cocidos de nuevo en Huevos Crudos.
+Corregido que las Pizzas tuvieran la etiqueta hasMetal.
+Corregido error en la prueba SliceCooked.
+Corregido que PopEmpty2 y PopEmpty3 tuvieran DisplayCategory = WaterContainer en lugar de DisplayCategory = Junk.
+Corregido que PopEmpty tuviera DisplayCategory = Material en lugar de DisplayCategory = Junk.
+Corregido que BeerCanEmpty tuviera DisplayCategory = WaterContainer en lugar de Junk.
+Corregido que los Cubos no se actualizaran para usar sonidos de llenado de metal en lugar de sonidos de llenado de plástico.
+Corregido que los jugadores lejanos no aparecieran en el mapa del juego cuando la opción del servidor lo permite.
+Corregido el Exploit del Panel de Salud.

@@ -1,5 +1,5 @@
 // Localization Table
-// Language: Espanol Argentina(AR)
+// Language: EspaÒol Argentina(AR)
 [Info]
 	version = 0
 	guid = b73aa63e-6286-4c32-9e48-3b0024c22b51
@@ -12621,7 +12621,7 @@
 	//4203. ORIGINAL: Huzzah!
 	653cc063-72cd-4968-bff7-6ace03113817 = °Hurra!
 
-	//4204. ORIGINAL: Fluffyfoot the Fluffy Bunny? Have you ever seen a rabbit so fluffily scrumptious?‚Äù
+	//4204. ORIGINAL: Fluffyfoot the Fluffy Bunny? Have you ever seen a rabbit so fluffily scrumptious?‚Ä?
 	ad6b0586-a322-4201-8d85-8a9d9e3b8c1e = øFluffyfoot el Conejito? HabÌas visto alguna vez un conejito tan lindo?
 
 	//4205. ORIGINAL: Disco dancing?
@@ -12669,7 +12669,7 @@
 	//4219. ORIGINAL: Plants need water to grow!
 	dde00e4c-d670-4d1c-b31b-17621d8bf924 = °Las plantas necesitan agua para crecer!
 
-	//4220. ORIGINAL: Hi there Spiffo! Who's your little friend?‚Äù
+	//4220. ORIGINAL: Hi there Spiffo! Who's your little friend?‚Ä?
 	6af20bcf-ea6d-4afc-b4dc-c1144c0576f2 = °Hola Spiffo! °QuiÈn es tu amiguito?
 
 	//4221. ORIGINAL: Cooking?
